@@ -1,1 +1,1 @@
-# JPNToolsRepository
+# PetriNetBasedComponentFrameworkTools
