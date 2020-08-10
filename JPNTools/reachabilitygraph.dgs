@@ -1,0 +1,208 @@
+DGS004
+"reachabilitygraph.dgs" 0 0
+
+an N0 label: "N0" 
+
+an N1 label: "N1" 
+
+an N2 label: "N2" 
+
+an N3 label: "N3" 
+
+an N4 label: "N4" 
+
+an N5 label: "N5" 
+
+an N6 label: "N6" 
+
+an N7 label: "N7" 
+
+an N8 label: "N8" 
+
+an N9 label: "N9" 
+
+an N10 label: "N10" 
+
+an N11 label: "N11" 
+
+an N12 label: "N12" 
+
+an N13 label: "N13" 
+
+an N14 label: "N14" 
+
+an N15 label: "N15" 
+
+an N16 label: "N16" 
+
+an N17 label: "N17" 
+
+an N18 label: "N18" 
+
+an N19 label: "N19" 
+
+an N20 label: "N20" 
+
+an N21 label: "N21" 
+
+an N22 label: "N22" 
+
+an N23 label: "N23" 
+
+an N24 label: "N24" 
+
+an N25 label: "N25" 
+
+an N26 label: "N26" 
+
+an N27 label: "N27" 
+
+an N28 label: "N28" 
+
+an N29 label: "N29" 
+
+an N30 label: "N30" 
+
+an N31 label: "N31" 
+
+an N32 label: "N32" 
+
+an N33 label: "N33" 
+
+an N34 label: "N34" 
+
+an N35 label: "N35" 
+
+an N36 label: "N36" 
+
+ae e6 N6 > N2 label: "clo"
+
+
+ae e5 N5 > N6 label: "tr60"
+
+
+ae e4 N4 > N5 label: "tr37"
+
+
+ae e3 N3 > N4 label: "tr35"
+
+
+ae e2 N2 > N3 label: "tr58"
+
+
+ae e8 N7 > N2 label: "clo"
+
+
+ae e11 N9 > N2 label: "clo"
+
+
+ae e14 N11 > N3 label: "clo"
+
+
+ae e17 N13 > N4 label: "clo"
+
+
+ae e20 N15 > N5 label: "clo"
+
+
+ae e22 N16 > N8 label: "clo"
+
+
+ae e19 N14 > N15 label: "tr9"
+ae e21 N14 > N16 label: "tr60"
+
+
+ae e16 N12 > N13 label: "tr9"
+ae e18 N12 > N14 label: "tr37"
+
+
+ae e13 N10 > N11 label: "tr9"
+ae e15 N10 > N12 label: "tr35"
+
+
+ae e10 N8 > N9 label: "tr9"
+ae e12 N8 > N10 label: "tr58"
+
+
+ae e25 N18 > N3 label: "clo"
+
+
+ae e27 N19 > N3 label: "clo"
+
+
+ae e29 N20 > N10 label: "clo"
+
+
+ae e32 N22 > N4 label: "clo"
+
+
+ae e34 N23 > N4 label: "clo"
+
+
+ae e36 N24 > N12 label: "clo"
+
+
+ae e39 N26 > N5 label: "clo"
+
+
+ae e41 N27 > N5 label: "clo"
+
+
+ae e43 N28 > N14 label: "clo"
+
+
+ae e45 N29 > N1 label: "clo"
+
+
+ae e38 N25 > N26 label: "tr21"
+ae e40 N25 > N27 label: "tr7"
+ae e42 N25 > N28 label: "tr8"
+ae e44 N25 > N29 label: "tr60"
+
+
+ae e31 N21 > N22 label: "tr21"
+ae e33 N21 > N23 label: "tr7"
+ae e35 N21 > N24 label: "tr8"
+ae e37 N21 > N25 label: "tr37"
+
+
+ae e24 N17 > N18 label: "tr21"
+ae e26 N17 > N19 label: "tr7"
+ae e28 N17 > N20 label: "tr8"
+ae e30 N17 > N21 label: "tr35"
+
+
+ae e1 N1 > N2 label: "tr21"
+ae e7 N1 > N7 label: "tr7"
+ae e9 N1 > N8 label: "tr8"
+ae e23 N1 > N17 label: "tr58"
+
+
+ae e48 N31 > N17 label: "clo"
+
+
+ae e51 N33 > N21 label: "clo"
+
+
+ae e54 N35 > N25 label: "clo"
+
+
+ae e56 N36 > N0 label: "clo"
+
+
+ae e53 N34 > N35 label: "tr20"
+ae e55 N34 > N36 label: "tr60"
+
+
+ae e50 N32 > N33 label: "tr20"
+ae e52 N32 > N34 label: "tr37"
+
+
+ae e47 N30 > N31 label: "tr20"
+ae e49 N30 > N32 label: "tr35"
+
+
+ae e0 N0 > N1 label: "tr20"
+ae e46 N0 > N30 label: "tr58"
+
+

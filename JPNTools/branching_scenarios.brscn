@@ -1,0 +1,168 @@
+
+Root Node: N0
+
+
+
+Node N2<"#pl19#pl68#pl65"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N1;] 
+
+
+
+Node N3<"#pl68#pl65"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N0;] 
+
+
+
+Node N5<"#pl19#pl68#pl6#pl62"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N4;] 
+
+
+
+Node N7<"#pl19#pl68#pl6#pl62"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N4;] 
+
+
+
+Node N10<"#pl19#pl38#pl62"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N9;] 
+
+
+
+Node N11<"#pl38#pl62"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N8;] 
+
+
+
+Node N13<"#pl19#pl68#pl62#pl8"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N12;] 
+
+
+
+Node N15<"#pl19#pl68#pl62#pl8"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N12;] 
+
+
+
+Node N16<"#pl68#pl65"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N0;] 
+
+
+Node N14<"#pl68#pl62#pl8"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N15]; 
+	[
+	SIGNAL: tr60 ( 
+ 	)
+	 nodeID: N16]; 
+] 
+
+
+
+Node N17<"#pl19#pl68#pl65"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N1;] 
+
+
+Node N12<"#pl19#pl68#pl62#pl8"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N13]; 
+	[
+	SIGNAL: tr21 ( 
+ 	)
+	 nodeID: N14]; 
+	[
+	SIGNAL: tr60 ( 
+ 	)
+	 nodeID: N17]; 
+] 
+
+
+Node N9<"#pl19#pl38#pl62"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N10]; 
+	[
+	SIGNAL: tr21 ( 
+ 	)
+	 nodeID: N11]; 
+	[
+	SIGNAL: tr37 ( 
+ 	)
+	 nodeID: N12]; 
+] 
+
+
+
+Node N18<"#pl68#pl62#pl8"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N14;] 
+
+
+Node N8<"#pl38#pl62"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N9]; 
+	[
+	SIGNAL: tr37 ( 
+ 	)
+	 nodeID: N18]; 
+] 
+
+
+Node N6<"#pl68#pl6#pl62"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N7]; 
+	[
+	SIGNAL: tr35 ( 
+ 	)
+	 nodeID: N8]; 
+] 
+
+
+
+Node N19<"#pl19#pl38#pl62"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N9;] 
+
+
+Node N4<"#pl19#pl68#pl6#pl62"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N5]; 
+	[
+	SIGNAL: tr21 ( 
+ 	)
+	 nodeID: N6]; 
+	[
+	SIGNAL: tr35 ( 
+ 	)
+	 nodeID: N19]; 
+] 
+
+
+Node N1<"#pl19#pl68#pl65"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N2]; 
+	[
+	SIGNAL: tr21 ( 
+ 	)
+	 nodeID: N3]; 
+	[
+	SIGNAL: tr58 ( 
+ 	)
+	 nodeID: N4]; 
+] 
+
+
+
+Node N20<"#pl68#pl6#pl62"> : Event_Set[ ["CLOSURE_FOUND"] nodeID: N6;] 
+
+
+Node N0<"#pl68#pl65"> : Event_Set [ 
+	[
+	SIGNAL: tr20 ( 
+ 	)
+	 nodeID: N1]; 
+	[
+	SIGNAL: tr58 ( 
+ 	)
+	 nodeID: N20]; 
+] 
+
+
