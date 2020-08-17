@@ -1,0 +1,40 @@
+DGS004
+"reachabilitygraph.dgs" 0 0
+
+an N0 label: "N0" ui.name =  "
+   + Place: 1 has Tokens: 1
+   + Place: idle has Tokens: 1" 
+
+an N1 label: "N1" ui.name =  "
+   + Place: b_tOn has Tokens: 1
+   + Place: turning_On has Tokens: 1
+   + Place: idle has Tokens: 1" 
+
+an N2 label: "N2" ui.name =  "
+   + Place: turning_On has Tokens: 1
+   + Place: turning_On has Tokens: 1" 
+
+an N3 label: "N3" ui.name =  "
+   + Place: turning_On has Tokens: 1
+   + Place: b_tOn_reply has Tokens: 1
+   + Place: idle has Tokens: 1" 
+
+an N4 label: "N4" ui.name =  "
+   + Place: 1 has Tokens: 1
+   + Place: idle has Tokens: 1" 
+
+ae e4 N4 > N0 label: "clo"
+
+
+ae e3 N3 > N4 label: "recvTurnOn_Reply"
+
+
+ae e2 N2 > N3 label: "sendTurnOn_Reply"
+
+
+ae e1 N1 > N2 label: "recvTurnOn"
+
+
+ae e0 N0 > N1 label: "sendTurnOn"
+
+
