@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <name>
+      <text>system</text>
+    </name>
+    <graphics />
+    <place id="pl4">
+      <name>
+        <text>b_tOn</text>
+      </name>
+      <graphics>
+        <position x="176" y="10" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl8">
+      <name>
+        <text>b_tOn_reply</text>
+      </name>
+      <graphics>
+        <position x="182" y="115" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <page id="pg29">
+      <name>
+        <text>server</text>
+      </name>
+      <graphics>
+        <position x="317" y="52" />
+        <dimension x="32" y="32" />
+      </graphics>
+      <transition id="tr35">
+        <name>
+          <text>sendTurnOn_Reply</text>
+        </name>
+        <graphics>
+          <position x="144" y="120" />
+          <dimension x="32" y="32" />
+        </graphics>
+      </transition>
+      <transition id="tr36">
+        <name>
+          <text>recvTurnOn</text>
+        </name>
+        <graphics>
+          <position x="144" y="16" />
+          <dimension x="32" y="32" />
+        </graphics>
+      </transition>
+      <place id="pl31">
+        <name>
+          <text>idle</text>
+        </name>
+        <graphics>
+          <position x="247" y="70" />
+          <dimension x="20" y="20" />
+        </graphics>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="pl32">
+        <name>
+          <text>turning_On</text>
+        </name>
+        <graphics>
+          <position x="144" y="68" />
+          <dimension x="20" y="20" />
+        </graphics>
+      </place>
+      <referencePlace ref="pl8" id="pn43">
+        <graphics>
+          <position x="10" y="122" />
+          <dimension x="20" y="20" />
+        </graphics>
+      </referencePlace>
+      <referencePlace ref="pl4" id="pn46">
+        <graphics>
+          <position x="16" y="18" />
+          <dimension x="20" y="20" />
+        </graphics>
+      </referencePlace>
+      <arc id="a1" source="tr35" target="pl31" />
+      <arc id="a2" source="tr36" target="pl32" />
+      <arc id="a3" source="pl32" target="tr35" />
+      <arc id="a4" source="pl31" target="tr36" />
+      <arc id="a5" source="tr35" target="pn43" />
+      <arc id="a6" source="pn46" target="tr36" />
+    </page>
+    <page id="pg22">
+      <name>
+        <text>client</text>
+      </name>
+      <graphics>
+        <position x="16" y="64" />
+        <dimension x="32" y="32" />
+      </graphics>
+      <transition id="tr28">
+        <name>
+          <text>recvTurnOn_Reply</text>
+        </name>
+        <graphics>
+          <position x="169" y="120" />
+          <dimension x="32" y="32" />
+        </graphics>
+      </transition>
+      <transition id="tr29">
+        <name>
+          <text>sendTurnOn</text>
+        </name>
+        <graphics>
+          <position x="169" y="16" />
+          <dimension x="32" y="32" />
+        </graphics>
+      </transition>
+      <place id="pl25">
+        <name>
+          <text>turning_On</text>
+        </name>
+        <graphics>
+          <position x="169" y="68" />
+          <dimension x="20" y="20" />
+        </graphics>
+      </place>
+      <place id="pl13">
+        <graphics>
+          <position x="10" y="67" />
+          <dimension x="20" y="20" />
+        </graphics>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <referencePlace ref="pl4" id="pn36">
+        <graphics>
+          <position x="310" y="14" />
+          <dimension x="20" y="20" />
+        </graphics>
+      </referencePlace>
+      <referencePlace ref="pl8" id="pn42">
+        <graphics>
+          <position x="316" y="119" />
+          <dimension x="20" y="20" />
+        </graphics>
+      </referencePlace>
+      <arc id="a7" source="tr29" target="pl25" />
+      <arc id="a8" source="pl25" target="tr28" />
+      <arc id="a9" source="tr29" target="pn36" />
+      <arc id="a10" source="pn42" target="tr28" />
+      <arc id="a11" source="tr28" target="pl13" />
+      <arc id="a12" source="pl13" target="tr29" />
+    </page>
+  </net>
+</pnml>

@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="do1">
+    <toolspecific tool="Yasper" version="1.2.4020.34351">
+      <roles xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec" />
+    </toolspecific>
+    <transition id="tr1">
+      <name>
+        <text>switch_on</text>
+      </name>
+      <graphics>
+        <position x="893" y="244" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr3">
+      <name>
+        <text>inventory_info</text>
+      </name>
+      <graphics>
+        <position x="1122" y="240" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr4">
+      <name>
+        <text>load_products</text>
+      </name>
+      <graphics>
+        <position x="1173" y="145" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr5">
+      <name>
+        <text>r_SWITCHED_ON</text>
+      </name>
+      <graphics>
+        <position x="865" y="429" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr6">
+      <name>
+        <text>r_LOAD_PRODUCTS</text>
+      </name>
+      <graphics>
+        <position x="960" y="374" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr7">
+      <name>
+        <text>Command A</text>
+      </name>
+      <graphics>
+        <position x="240" y="111" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr8">
+      <name>
+        <text>reply X</text>
+      </name>
+      <graphics>
+        <position x="101" y="277" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr9">
+      <name>
+        <text>reply Z</text>
+      </name>
+      <graphics>
+        <position x="331" y="277" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr10">
+      <name>
+        <text>reply Y</text>
+      </name>
+      <graphics>
+        <position x="193" y="275" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr11">
+      <name>
+        <text>Notification A</text>
+      </name>
+      <graphics>
+        <position x="634" y="752" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr12">
+      <name>
+        <text>Signal A</text>
+      </name>
+      <graphics>
+        <position x="901" y="750" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr17">
+      <name>
+        <text>Command A</text>
+      </name>
+      <graphics>
+        <position x="270" y="629" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr18">
+      <name>
+        <text>reply X</text>
+      </name>
+      <graphics>
+        <position x="130" y="763" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr19">
+      <name>
+        <text>reply Z</text>
+      </name>
+      <graphics>
+        <position x="371" y="763" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr20">
+      <name>
+        <text>reply Y</text>
+      </name>
+      <graphics>
+        <position x="233" y="761" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl3">
+      <name>
+        <text>intial</text>
+      </name>
+      <graphics>
+        <position x="1011" y="145" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl4">
+      <name>
+        <text>InputParams</text>
+      </name>
+      <graphics>
+        <position x="1297" y="144" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl5">
+      <name>
+        <text>SM Vars</text>
+      </name>
+      <graphics>
+        <position x="1235" y="429" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl8">
+      <name>
+        <text>replying_switchOn</text>
+      </name>
+      <graphics>
+        <position x="894" y="330" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl9">
+      <name>
+        <text>Operational</text>
+      </name>
+      <graphics>
+        <position x="865" y="528" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl10">
+      <name>
+        <text>INITIAL</text>
+      </name>
+      <graphics>
+        <position x="240" y="34" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl11">
+      <name>
+        <text>REPLYING</text>
+      </name>
+      <graphics>
+        <position x="241" y="174" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl12">
+      <name>
+        <text>on_MODE_A</text>
+      </name>
+      <graphics>
+        <position x="153" y="366" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>InputParams</text>
+      </name>
+      <graphics>
+        <position x="514" y="109" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl14">
+      <name>
+        <text>SM Vars</text>
+      </name>
+      <graphics>
+        <position x="29" y="111" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>on_MODE_B</text>
+      </name>
+      <graphics>
+        <position x="329" y="361" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl16">
+      <graphics>
+        <position x="633" y="675" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl17">
+      <graphics>
+        <position x="633" y="830" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl18">
+      <graphics>
+        <position x="900" y="678" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl19">
+      <graphics>
+        <position x="902" y="822" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl27">
+      <name>
+        <text>INITIAL</text>
+      </name>
+      <graphics>
+        <position x="267" y="571" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl28">
+      <name>
+        <text>REPLYING</text>
+      </name>
+      <graphics>
+        <position x="271" y="695" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl29">
+      <name>
+        <text>on_MODE_A</text>
+      </name>
+      <graphics>
+        <position x="190" y="824" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl32">
+      <name>
+        <text>on_MODE_B</text>
+      </name>
+      <graphics>
+        <position x="370" y="821" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl1">
+      <name>
+        <text>InputParams</text>
+      </name>
+      <graphics>
+        <position x="1050" y="685" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl2">
+      <name>
+        <text>SM Vars</text>
+      </name>
+      <graphics>
+        <position x="1057" y="750" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>InputParams</text>
+      </name>
+      <graphics>
+        <position x="767" y="697" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <place id="pl7">
+      <name>
+        <text>SM Vars</text>
+      </name>
+      <graphics>
+        <position x="768" y="753" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <type>
+        <text>store</text>
+      </type>
+    </place>
+    <arc id="a1" source="pl3" target="tr1" />
+    <arc id="a2" source="pl3" target="tr3" />
+    <arc id="a3" source="tr3" target="pl3" />
+    <arc id="a4" source="pl3" target="tr4" />
+    <arc id="a5" source="tr4" target="pl3" />
+    <arc id="a6" source="tr4" target="pl4">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a7" source="tr3" target="pl5">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a8" source="tr1" target="pl8" />
+    <arc id="a9" source="pl8" target="tr5" />
+    <arc id="a10" source="pl8" target="tr6" />
+    <arc id="a11" source="tr6" target="pl3" />
+    <arc id="a12" source="tr5" target="pl9" />
+    <arc id="a13" source="tr6" target="pl5">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a14" source="tr5" target="pl5">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a15" source="tr1" target="pl5">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a16" source="pl11" target="tr8" />
+    <arc id="a17" source="tr8" target="pl12" />
+    <arc id="a18" source="pl11" target="tr9" />
+    <arc id="a19" source="pl11" target="tr10" />
+    <arc id="a20" source="tr10" target="pl12" />
+    <arc id="a21" source="tr7" target="pl11" />
+    <arc id="a22" source="pl10" target="tr7" />
+    <arc id="a23" source="tr7" target="pl14">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a24" source="tr7" target="pl13">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a25" source="tr9" target="pl13">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a26" source="tr9" target="pl14">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a27" source="tr10" target="pl14">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a28" source="tr10" target="pl13">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a29" source="tr8" target="pl13">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a30" source="tr8" target="pl14">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a31" source="tr9" target="pl15" />
+    <arc id="a32" source="pl16" target="tr11" />
+    <arc id="a33" source="tr11" target="pl17" />
+    <arc id="a34" source="pl18" target="tr12" />
+    <arc id="a35" source="tr12" target="pl19" />
+    <arc id="a36" source="pl28" target="tr18" />
+    <arc id="a37" source="tr18" target="pl29" />
+    <arc id="a38" source="pl28" target="tr19" />
+    <arc id="a39" source="pl28" target="tr20" />
+    <arc id="a40" source="tr20" target="pl29" />
+    <arc id="a41" source="tr17" target="pl28" />
+    <arc id="a42" source="pl27" target="tr17" />
+    <arc id="a43" source="tr19" target="pl32" />
+    <arc id="a44" source="tr12" target="pl1">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a45" source="tr12" target="pl2">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+    <arc id="a46" source="tr11" target="pl6">
+      <type>
+        <text>R</text>
+      </type>
+    </arc>
+    <arc id="a47" source="tr11" target="pl7">
+      <type>
+        <text>RU</text>
+      </type>
+    </arc>
+  </net>
+</pnml>

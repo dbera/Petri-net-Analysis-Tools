@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <name>
+      <text>system</text>
+    </name>
+    <graphics />
+    <transition id="tr44">
+      <name>
+        <text>turnOn</text>
+      </name>
+      <graphics>
+        <position x="890" y="161" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr56">
+      <name>
+        <text>orderProduct</text>
+      </name>
+      <graphics>
+        <position x="777" y="313" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr59">
+      <name>
+        <text>errorNI</text>
+      </name>
+      <graphics>
+        <position x="1135" y="387" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr62">
+      <name>
+        <text>insertCoin</text>
+      </name>
+      <graphics>
+        <position x="1022" y="439" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr67">
+      <name>
+        <text>reply</text>
+      </name>
+      <graphics>
+        <position x="828" y="533" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr75">
+      <name>
+        <text>reply</text>
+      </name>
+      <graphics>
+        <position x="946" y="624" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr85">
+      <name>
+        <text>turnOff</text>
+      </name>
+      <graphics>
+        <position x="1135" y="708" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr93">
+      <name>
+        <text>statusInfo</text>
+      </name>
+      <graphics>
+        <position x="738" y="213" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr113">
+      <name>
+        <text>turnOn</text>
+      </name>
+      <graphics>
+        <position x="328" y="161" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr114">
+      <name>
+        <text>orderProduct</text>
+      </name>
+      <graphics>
+        <position x="215" y="313" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr115">
+      <name>
+        <text>errorNI</text>
+      </name>
+      <graphics>
+        <position x="80" y="388" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr116">
+      <name>
+        <text>insertCoin</text>
+      </name>
+      <graphics>
+        <position x="460" y="439" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr117">
+      <name>
+        <text>reply</text>
+      </name>
+      <graphics>
+        <position x="266" y="533" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr118">
+      <name>
+        <text>reply</text>
+      </name>
+      <graphics>
+        <position x="384" y="624" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr119">
+      <name>
+        <text>turnOff</text>
+      </name>
+      <graphics>
+        <position x="80" y="707" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr120">
+      <name>
+        <text>statusInfo</text>
+      </name>
+      <graphics>
+        <position x="439" y="213" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl41">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="888" y="101" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl43">
+      <name>
+        <text>busy</text>
+      </name>
+      <graphics>
+        <position x="891" y="259" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl50">
+      <name>
+        <text>i_turnOn</text>
+      </name>
+      <graphics>
+        <position x="606" y="160" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl54">
+      <name>
+        <text>ordering</text>
+      </name>
+      <graphics>
+        <position x="779" y="473" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl55">
+      <name>
+        <text>error</text>
+      </name>
+      <graphics>
+        <position x="1136" y="595" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl64">
+      <name>
+        <text>i_orderProduct</text>
+      </name>
+      <graphics>
+        <position x="612" y="315" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl73">
+      <name>
+        <text>waiting</text>
+      </name>
+      <graphics>
+        <position x="1020" y="532" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl78">
+      <name>
+        <text>i_orderProduct_reply</text>
+      </name>
+      <graphics>
+        <position x="612" y="534" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl80">
+      <name>
+        <text>i_insertCoin_reply</text>
+      </name>
+      <graphics>
+        <position x="612" y="625" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl88">
+      <name>
+        <text>turnOff</text>
+      </name>
+      <graphics>
+        <position x="615" y="707" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl91">
+      <name>
+        <text>i_insertCoin</text>
+      </name>
+      <graphics>
+        <position x="613" y="437" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl95">
+      <name>
+        <text>i_statusInfo</text>
+      </name>
+      <graphics>
+        <position x="606" y="213" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl97">
+      <name>
+        <text>i_errorNI</text>
+      </name>
+      <graphics>
+        <position x="612" y="388" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl100">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="326" y="101" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl102">
+      <name>
+        <text>busy</text>
+      </name>
+      <graphics>
+        <position x="329" y="259" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl103">
+      <name>
+        <text>ordering</text>
+      </name>
+      <graphics>
+        <position x="217" y="473" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl104">
+      <name>
+        <text>error</text>
+      </name>
+      <graphics>
+        <position x="81" y="590" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <place id="pl106">
+      <name>
+        <text>waiting</text>
+      </name>
+      <graphics>
+        <position x="458" y="565" />
+        <dimension x="20" y="20" />
+      </graphics>
+    </place>
+    <page id="ip9">
+      <graphics>
+        <position x="609" y="427" />
+        <dimension x="94" y="632" />
+      </graphics>
+      <toolspecific tool="Yasper" version="2.0.5.0">
+        <inline xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx99" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>This model has race conditions and leg property violations</text>
+        </description>
+        <graphics>
+          <position x="899" y="12" />
+          <dimension x="484" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a22" source="pl41" target="tr44" />
+    <arc id="a40" source="pl50" target="tr44" />
+    <arc id="a49" source="pl43" target="tr56" />
+    <arc id="a50" source="tr56" target="pl54" />
+    <arc id="a51" source="pl43" target="tr59">
+      <graphics>
+        <position x="1134" y="260" />
+      </graphics>
+    </arc>
+    <arc id="a52" source="tr59" target="pl55" />
+    <arc id="a53" source="pl43" target="tr62" />
+    <arc id="a54" source="pl64" target="tr56" />
+    <arc id="a55" source="pl54" target="tr67" />
+    <arc id="a56" source="tr67" target="pl43" />
+    <arc id="a57" source="tr62" target="pl73" />
+    <arc id="a58" source="pl73" target="tr75" />
+    <arc id="a59" source="tr75" target="pl43" />
+    <arc id="a60" source="tr67" target="pl78" />
+    <arc id="a61" source="tr75" target="pl80" />
+    <arc id="a62" source="pl55" target="tr85" />
+    <arc id="a63" source="tr85" target="pl41">
+      <graphics>
+        <position x="1218" y="707" />
+        <position x="1218" y="100" />
+      </graphics>
+    </arc>
+    <arc id="a64" source="pl88" target="tr85" />
+    <arc id="a65" source="tr44" target="pl43" />
+    <arc id="a66" source="pl91" target="tr62" />
+    <arc id="a67" source="pl43" target="tr93" />
+    <arc id="a68" source="tr93" target="pl43" />
+    <arc id="a69" source="tr93" target="pl95" />
+    <arc id="a70" source="tr59" target="pl97" />
+    <arc id="a71" source="pl100" target="tr113" />
+    <arc id="a72" source="pl102" target="tr114" />
+    <arc id="a73" source="tr114" target="pl103" />
+    <arc id="a74" source="pl102" target="tr115">
+      <graphics>
+        <position x="80" y="260" />
+      </graphics>
+    </arc>
+    <arc id="a75" source="tr115" target="pl104" />
+    <arc id="a76" source="pl102" target="tr116" />
+    <arc id="a77" source="pl103" target="tr117" />
+    <arc id="a78" source="tr117" target="pl102" />
+    <arc id="a79" source="tr116" target="pl106" />
+    <arc id="a80" source="pl106" target="tr118" />
+    <arc id="a81" source="tr118" target="pl102" />
+    <arc id="a82" source="pl104" target="tr119" />
+    <arc id="a83" source="tr119" target="pl100">
+      <graphics>
+        <position x="0" y="708" />
+        <position x="4" y="102" />
+      </graphics>
+    </arc>
+    <arc id="a84" source="tr113" target="pl102" />
+    <arc id="a85" source="pl102" target="tr120" />
+    <arc id="a86" source="tr120" target="pl102" />
+    <arc id="a87" source="pl95" target="tr120" />
+    <arc id="a88" source="tr113" target="pl50" />
+    <arc id="a89" source="tr114" target="pl64" />
+    <arc id="a90" source="pl97" target="tr115" />
+    <arc id="a91" source="tr116" target="pl91" />
+    <arc id="a92" source="pl78" target="tr117" />
+    <arc id="a93" source="pl80" target="tr118" />
+    <arc id="a94" source="tr119" target="pl88" />
+  </net>
+</pnml>
