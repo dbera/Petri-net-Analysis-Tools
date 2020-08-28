@@ -27,9 +27,9 @@ When you download PnAT, you will find two executable JAR files, namely
       * reload file
 
 # References
- * [Petri nets for Modeling Robots, PhD Thesis 2014, TU Eindhoven] (https://research.tue.nl/en/publications/petri-nets-for-modeling-robots).
- * [Designing Weakly Terminating ROS Systems, ATPN 2012] (https://link.springer.com/chapter/10.1007/978-3-642-31131-4_18)
- * [Component Framework where Port Compatibility implies Weak Termination, PNSE 2011] (http://ceur-ws.org/Vol-723/paper11.pdf)
+ * [Petri nets for Modeling Robots, PhD Thesis 2014, TU Eindhoven](https://research.tue.nl/en/publications/petri-nets-for-modeling-robots).
+ * [Designing Weakly Terminating ROS Systems, ATPN 2012](https://link.springer.com/chapter/10.1007/978-3-642-31131-4_18)
+ * [Component Framework where Port Compatibility implies Weak Termination, PNSE 2011](http://ceur-ws.org/Vol-723/paper11.pdf)
 
 # Author
  * Debjyoti Bera, Den Bosch, The Netherlands
