@@ -1,6 +1,6 @@
 # PnAT : Tools for Analysis and Visualization of Petri nets
 
-PnAT is a set of tools to analyze and visualize Petri nets and and its reachability graph. It is an implementation of the ideas around a component-based framework presented in (http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.864.7243&rep=rep1&type=pdf). PnAT works well with [Yasper] (www.yasper.org), a modeling and simulation tool for Petri nets. The idea is that a user defines a Petri net model in Yasper and then uses PnAT in conjunction to analyze structural and behavioral properties. Some properties such as OPN, leg and choice properties are specific for models describing communicating component-based system. Such models can be described in Yasper using the subnet concept and interpreting reference places as interface places of a component. Beware that subnets more than one level deep are uninterpreted. 
+PnAT is a set of tools to analyze and visualize Petri nets and and its reachability graph. It works well with [Yasper] (www.yasper.org), a modeling and simulation tool for Petri nets. The idea is that a user defines a Petri net model in Yasper and then uses PnAT in conjunction to analyze structural and behavioral properties. Some properties such as OPN, leg and choice properties are specific for models describing communicating component-based system. Such models can be described in Yasper using the subnet concept and interpreting reference places as interface places of a component. Beware that subnets more than one level deep are uninterpreted. 
 
 When you download PnAT, you will find two executable JAR files, namely 
 
@@ -25,6 +25,11 @@ When you download PnAT, you will find two executable JAR files, namely
       * path finder: select a node in the visualization to see its marking and visualize a set of paths from the initial node and back to it
     * Other
       * reload file
+
+# References
+ * [Petri nets for Modeling Robots, PhD Thesis 2014, TU Eindhoven] (http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.864.7243&rep=rep1&type=pdf).
+ * [Designing Weakly Terminating ROS Systems, ATPN 2012] (https://link.springer.com/chapter/10.1007/978-3-642-31131-4_18)
+ * [Component Framework where Port Compatibility implies Weak Termination, PNSE 2011] (http://ceur-ws.org/Vol-723/paper11.pdf)
 
 # Author
  * Debjyoti Bera, Den Bosch, The Netherlands
