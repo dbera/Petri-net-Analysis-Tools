@@ -25,4 +25,4 @@ If you'd like to chat with Hubot users and developers, [join us on Slack](https:
 
 ## License
 
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
