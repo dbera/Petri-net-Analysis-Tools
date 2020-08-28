@@ -1,6 +1,6 @@
 # PnAT 
 PnAT is a set of tools to analyze and visualize Petri nets. In its current version, there are two executable JAR files, namely 
-  * # LaunchPetriNetAnalysis.jar
+  * LaunchPetriNetAnalysis.jar
     * Input: Accepts a Petri net model in PNML format (successfully tested against models from Yasper and Tapaal)
     * Analysis Options:
       * state machine net
@@ -8,9 +8,10 @@ PnAT is a set of tools to analyze and visualize Petri nets. In its current versi
       * open petri net
       * choice and leg properties
     * Generator Options:
-      * reachability graph (with bounds)
+      * reachability graph (with bounds on number of steps)
+      * coverability graph
       * skeleton 
-  * # LaunchReachabilityGraphAnalysis.jar
+  * LaunchReachabilityGraphAnalysis.jar
 
 
 
