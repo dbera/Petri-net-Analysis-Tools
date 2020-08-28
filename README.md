@@ -1,6 +1,6 @@
 # PnAT : Tools for Analysis and Visualization of Petri nets
 
-PnAT is a set of tools to analyze and visualize Petri nets. In its current version, there are two executable JAR files, namely 
+PnAT is a set of tools to analyze and visualize Petri nets and generated artefacts. In its current version, there are two executable JAR files, namely 
   * **LaunchPetriNetAnalysis.jar**
     * Input: Accepts a Petri net model in PNML format (tested against models from Yasper and Tapaal)
     * Analysis Options
