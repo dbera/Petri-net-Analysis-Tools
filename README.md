@@ -1,6 +1,6 @@
 # PnAT : Tools for Analysis and Visualization of Petri nets
 
-PnAT is a set of tools to analyze and visualize Petri nets and and its reachability graph. It works well with [Yasper] (www.yasper.org), a modeling and simulation tool for Petri nets. The idea is that a user defines a Petri net model in Yasper and then uses PnAT in conjunction to analyze structural and behavioral properties. Some properties such as OPN, leg and choice properties are specific for models describing communicating component-based system. Such models can be described in Yasper using subnets and interpreting reference places as interface places of a component. 
+PnAT is a set of tools to analyze and visualize Petri nets and and its reachability graph. It works well with [Yasper](www.yasper.org), a modeling and simulation tool for Petri nets. The idea is that a user defines a Petri net model in Yasper and then uses PnAT in conjunction to analyze structural and behavioral properties. Some properties such as OPN, leg and choice properties are specific for models describing communicating component-based system. Such models can be described in Yasper using subnets and interpreting reference places as interface places of a component. 
 
 Beware that subnets more than one level deep are uninterpreted. Also ensure that all places, transitions and nets have labels. 
 
