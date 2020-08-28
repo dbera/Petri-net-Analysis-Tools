@@ -43,7 +43,7 @@ When you download PnAT, you will find two executable JAR files
  * [3] [Component Framework where Port Compatibility implies Weak Termination, PNSE 2011](http://ceur-ws.org/Vol-723/paper11.pdf)
 
 # Author
- * Debjyoti Bera, Den Bosch, The Netherlands
+ * Debjyoti Bera, The Netherlands
 
 ## License
 
