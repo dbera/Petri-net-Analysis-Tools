@@ -1,1 +1,1 @@
-# Tools for Structural and Reachabilioty Analysis of Petri nets
+# Tools for Structural and Reachability Analysis of Petri nets
