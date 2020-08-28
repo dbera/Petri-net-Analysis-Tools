@@ -1,23 +1,33 @@
-# PnAT 
+# PnAT : Tools for Analysis and Visualization of Petri nets
+
 PnAT is a set of tools to analyze and visualize Petri nets. In its current version, there are two executable JAR files, namely 
-  * # LaunchPetriNetAnalysis.jar
+  * **LaunchPetriNetAnalysis.jar**
     * Input: Accepts a Petri net model in PNML format (successfully tested against models from Yasper and Tapaal)
-    * Analysis Options:
+    * Analysis Options
       * state machine net
       * workflow net
       * open petri net
       * choice and leg properties
-    * Generator Options:
-      * reachability graph (with bounds)
+    * Generator Options
+      * reachability graph (with bounds on number of steps)
+      * coverability graph
       * skeleton 
-  * # LaunchReachabilityGraphAnalysis.jar
+    * Others
+      * reload-file
+  * **LaunchReachabilityGraphAnalysis.jar**
+    * Analysis Options
+      * Weak termination
+      * strongly connected components
+      * path finder: select a node in the visualization to see its marking and visualize a set of paths from the initial node and back to it
+    * Other
+      * reload file
 
 
 
 
 
 
-Structural and Reachability Analysis of Petri nets
+
 
 Hubot is a framework to build chat bots, modeled after GitHub's Campfire bot of the same name, hubot.
 He's pretty cool. He's [extendable with scripts](http://hubot.github.com/docs/#scripts) and can work
