@@ -36,4 +36,4 @@ When you download PnAT, you will find two executable JAR files, namely
 
 ## License
 
-See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+See the [LICENSE](LICENSE) file for license rights and limitations (LGPL v2.1).
