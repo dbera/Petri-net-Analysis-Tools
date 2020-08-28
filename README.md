@@ -1,4 +1,4 @@
-# PnAT : Tools for Analysis and Visualization of Petri nets
+# PnAT: Tools for Analysis and Visualization of Petri nets
 
 PnAT is a set of tools to analyze and visualize Petri nets and and its reachability graph. It works well with [Yasper](www.yasper.org), a modeling and simulation tool for Petri nets. The idea is that a user defines a Petri net model in Yasper and then uses PnAT in conjunction to analyze structural and behavioral properties. 
 
@@ -44,6 +44,9 @@ When you download PnAT, you will find two executable JAR files
 
 # Author
  * Debjyoti Bera, The Netherlands
+ 
+# Contact
+  For suggestions or questions you can mail me at bera82@gmail.com
 
 ## License
 
