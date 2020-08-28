@@ -4,6 +4,8 @@ PnAT is a set of tools to analyze and visualize Petri nets and and its reachabil
 
 Some properties such as open petri nets, leg and choice properties are specific to models describing communicating component-based system. In such a system, components provide and consume services over interfaces. An interface is defined as a Portnet [1]. A component net is defined in terms of refinements with provided and required portnets [1]. Such models can be modeled in Yasper using the subnets feature and interpreting reference places as interface places of a component. 
 
+![GitHub Logo](/Images/yasper.png)
+
 Beware that subnets more than one level deep are uninterpreted. Also ensure that all places, transitions and nets have labels. 
 
 When you download PnAT, you will find two executable JAR files
