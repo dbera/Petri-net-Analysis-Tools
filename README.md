@@ -11,7 +11,7 @@ Beware that subnets more than one level deep are uninterpreted. Also ensure that
 When you download PnAT, you will find two executable JAR files
 
   * **LaunchPetriNetAnalysis.jar**
-    * Input: Accepts a Petri net model in PNML format (tested against models from Yasper and Tapaal).
+    * Input: Accepts a Petri net model in PNML format (tested against models from [Yasper](www.yasper.org) and [Tapaal](https://www.tapaal.net/)).
     * Analysis Options
       * state machine net
       * workflow net
