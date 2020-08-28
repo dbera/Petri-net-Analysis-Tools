@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <graphics />
+    <transition id="tr28">
+      <name>
+        <text>waitforLock</text>
+      </name>
+      <graphics>
+        <position x="267" y="284" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr32">
+      <name>
+        <text>comptTraj</text>
+      </name>
+      <graphics>
+        <position x="275" y="899" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr35">
+      <name>
+        <text>read</text>
+      </name>
+      <graphics>
+        <position x="270" y="424" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr42">
+      <name>
+        <text>ReleaseLock</text>
+      </name>
+      <graphics>
+        <position x="275" y="776" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr51">
+      <name>
+        <text>waitForLock</text>
+      </name>
+      <graphics>
+        <position x="531" y="264" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr52">
+      <name>
+        <text>FetchSensor</text>
+      </name>
+      <graphics>
+        <position x="539" y="763" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr53">
+      <name>
+        <text>write</text>
+      </name>
+      <graphics>
+        <position x="534" y="419" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr54">
+      <name>
+        <text>ReleaseLock</text>
+      </name>
+      <graphics>
+        <position x="538" y="606" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr1">
+      <name>
+        <text>computeWP</text>
+      </name>
+      <graphics>
+        <position x="273" y="590" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr10">
+      <name>
+        <text>display2User</text>
+      </name>
+      <graphics>
+        <position x="637" y="514" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr14">
+      <name>
+        <text>spawnThreads</text>
+      </name>
+      <graphics>
+        <position x="399" y="143" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr23">
+      <name>
+        <text>JoinThreads</text>
+      </name>
+      <graphics>
+        <position x="440" y="1002" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr34">
+      <name>
+        <text>return</text>
+      </name>
+      <graphics>
+        <position x="16" y="580" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr37">
+      <name>
+        <text>return</text>
+      </name>
+      <graphics>
+        <position x="747" y="514" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl36">
+      <name>
+        <text>acquired</text>
+      </name>
+      <graphics>
+        <position x="269" y="362" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl39">
+      <name>
+        <text>decide</text>
+      </name>
+      <graphics>
+        <position x="276" y="836" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl44">
+      <graphics>
+        <position x="271" y="491" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl48">
+      <graphics>
+        <position x="533" y="342" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl49">
+      <name>
+        <text>released</text>
+      </name>
+      <graphics>
+        <position x="538" y="685" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl50">
+      <graphics>
+        <position x="537" y="486" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl63">
+      <name>
+        <text>lock</text>
+      </name>
+      <graphics>
+        <position x="407" y="359" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl7">
+      <name>
+        <text>computed</text>
+      </name>
+      <graphics>
+        <position x="274" y="691" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="399" y="51" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>waiting</text>
+      </name>
+      <graphics>
+        <position x="268" y="206" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl19">
+      <name>
+        <text>waiting</text>
+      </name>
+      <graphics>
+        <position x="530" y="189" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl24">
+      <name>
+        <text>decide</text>
+      </name>
+      <graphics>
+        <position x="538" y="854" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl29">
+      <graphics>
+        <position x="273" y="958" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl32">
+      <name>
+        <text>done</text>
+      </name>
+      <graphics>
+        <position x="440" y="1087" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl45">
+      <name>
+        <text>Data</text>
+      </name>
+      <graphics>
+        <position x="410" y="484" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx72" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>ThreadingAndSynchronization</text>
+        </description>
+        <graphics>
+          <position x="404" y="12" />
+          <dimension x="260" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx41" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Why is there a deadlock? Investigate and resolve</text>
+        </description>
+        <graphics>
+          <position x="675" y="70" />
+          <dimension x="412" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx42" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Typical example of threading and synchronization
+</text>
+        </description>
+        <graphics>
+          <position x="674" y="26" />
+          <dimension x="420" y="48" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a1" source="tr28" target="pl36" />
+    <arc id="a2" source="pl36" target="tr35" />
+    <arc id="a3" source="pl39" target="tr32" />
+    <arc id="a4" source="tr42" target="pl39" />
+    <arc id="a5" source="tr35" target="pl44" />
+    <arc id="a6" source="tr51" target="pl48" />
+    <arc id="a7" source="pl48" target="tr53" />
+    <arc id="a8" source="pl49" target="tr52" />
+    <arc id="a9" source="tr54" target="pl49" />
+    <arc id="a10" source="tr53" target="pl50" />
+    <arc id="a11" source="pl50" target="tr54" />
+    <arc id="a12" source="pl63" target="tr28" />
+    <arc id="a13" source="pl63" target="tr51" />
+    <arc id="a14" source="tr54" target="pl63" />
+    <arc id="a15" source="tr42" target="pl63" />
+    <arc id="a16" source="pl44" target="tr1" />
+    <arc id="a22" source="tr1" target="pl7" />
+    <arc id="a23" source="pl7" target="tr42" />
+    <arc id="a24" source="pl50" target="tr10">
+      <graphics>
+        <position x="579" y="471" />
+      </graphics>
+    </arc>
+    <arc id="a35" source="tr10" target="pl50">
+      <graphics>
+        <position x="569" y="530" />
+      </graphics>
+    </arc>
+    <arc id="a36" source="tr14" target="pl15" />
+    <arc id="a37" source="pl15" target="tr28" />
+    <arc id="a38" source="tr14" target="pl19" />
+    <arc id="a39" source="pl19" target="tr51" />
+    <arc id="a40" source="pl13" target="tr14" />
+    <arc id="a41" source="tr52" target="pl24" />
+    <arc id="a42" source="pl24" target="tr23" />
+    <arc id="a43" source="tr32" target="pl29" />
+    <arc id="a44" source="tr23" target="pl32" />
+    <arc id="a45" source="pl39" target="tr34" />
+    <arc id="a46" source="pl24" target="tr37" />
+    <arc id="a47" source="tr37" target="pl19" />
+    <arc id="a48" source="pl29" target="tr23" />
+    <arc id="a49" source="tr34" target="pl15" />
+    <arc id="a50" source="pl45" target="tr53" />
+    <arc id="a51" source="tr53" target="pl45" />
+    <arc id="a52" source="pl45" target="tr35" />
+    <arc id="a53" source="tr35" target="pl45" />
+  </net>
+</pnml>

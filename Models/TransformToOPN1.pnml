@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <graphics />
+    <transition id="tr4">
+      <name>
+        <text>Select_Coffee_Type</text>
+      </name>
+      <graphics>
+        <position x="256" y="388" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr11">
+      <name>
+        <text>TurnOn</text>
+      </name>
+      <graphics>
+        <position x="251" y="101" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr18">
+      <name>
+        <text>status_update</text>
+      </name>
+      <graphics>
+        <position x="418" y="793" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr21">
+      <name>
+        <text>Error</text>
+      </name>
+      <graphics>
+        <position x="255" y="1001" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr23">
+      <name>
+        <text>Finished</text>
+      </name>
+      <graphics>
+        <position x="379" y="881" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr31">
+      <name>
+        <text>init_OK</text>
+      </name>
+      <graphics>
+        <position x="255" y="237" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr8">
+      <name>
+        <text>init_NOK</text>
+      </name>
+      <graphics>
+        <position x="364" y="172" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr24">
+      <name>
+        <text>InsertCoins</text>
+      </name>
+      <graphics>
+        <position x="347" y="569" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr30">
+      <name>
+        <text>cost_NOK</text>
+      </name>
+      <graphics>
+        <position x="183" y="504" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr35">
+      <name>
+        <text>cost_OK</text>
+      </name>
+      <graphics>
+        <position x="322" y="710" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr25">
+      <name>
+        <text>turnOff</text>
+      </name>
+      <graphics>
+        <position x="161" y="1067" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr53">
+      <name>
+        <text>Select_Coffee_Type</text>
+      </name>
+      <graphics>
+        <position x="1328" y="396" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr54">
+      <name>
+        <text>status_update</text>
+      </name>
+      <graphics>
+        <position x="1490" y="801" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr55">
+      <name>
+        <text>Error</text>
+      </name>
+      <graphics>
+        <position x="1315" y="949" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr56">
+      <name>
+        <text>Finished</text>
+      </name>
+      <graphics>
+        <position x="1451" y="889" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr57">
+      <name>
+        <text>init_OK</text>
+      </name>
+      <graphics>
+        <position x="1327" y="245" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr58">
+      <name>
+        <text>TurnOn</text>
+      </name>
+      <graphics>
+        <position x="1323" y="109" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr59">
+      <name>
+        <text>init_NOK</text>
+      </name>
+      <graphics>
+        <position x="1249" y="180" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr60">
+      <name>
+        <text>InsertCoins</text>
+      </name>
+      <graphics>
+        <position x="1419" y="577" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr61">
+      <name>
+        <text>cost_NOK</text>
+      </name>
+      <graphics>
+        <position x="1255" y="512" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr62">
+      <name>
+        <text>cost_OK</text>
+      </name>
+      <graphics>
+        <position x="1394" y="718" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr64">
+      <name>
+        <text>turnOff</text>
+      </name>
+      <graphics>
+        <position x="1233" y="1075" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl2">
+      <name>
+        <text>ready</text>
+      </name>
+      <graphics>
+        <position x="255" y="304" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl16">
+      <name>
+        <text>Preparing_Coffee</text>
+      </name>
+      <graphics>
+        <position x="324" y="791" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl34">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="253" y="10" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl4">
+      <graphics>
+        <position x="253" y="173" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl25">
+      <name>
+        <text>selected</text>
+      </name>
+      <graphics>
+        <position x="255" y="473" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl29">
+      <name>
+        <text>checking</text>
+      </name>
+      <graphics>
+        <position x="255" y="635" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl5">
+      <name>
+        <text>iTurnOn</text>
+      </name>
+      <graphics>
+        <position x="777" y="102" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>iTurnOnOK</text>
+      </name>
+      <graphics>
+        <position x="783" y="238" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl7">
+      <name>
+        <text>iTurnOnNOK</text>
+      </name>
+      <graphics>
+        <position x="782" y="174" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl11">
+      <name>
+        <text>iSelection</text>
+      </name>
+      <graphics>
+        <position x="775" y="389" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>iCoins</text>
+      </name>
+      <graphics>
+        <position x="772" y="569" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>iCoinsNOK</text>
+      </name>
+      <graphics>
+        <position x="773" y="503" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl17">
+      <name>
+        <text>iCoinsOK</text>
+      </name>
+      <graphics>
+        <position x="775" y="709" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl19">
+      <name>
+        <text>Faulty</text>
+      </name>
+      <graphics>
+        <position x="161" y="1003" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl22">
+      <name>
+        <text>iTurnOff</text>
+      </name>
+      <graphics>
+        <position x="773" y="1068" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl30">
+      <name>
+        <text>iError</text>
+      </name>
+      <graphics>
+        <position x="773" y="1001" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl31">
+      <name>
+        <text>iDone</text>
+      </name>
+      <graphics>
+        <position x="768" y="880" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl36">
+      <name>
+        <text>ready</text>
+      </name>
+      <graphics>
+        <position x="1327" y="312" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl37">
+      <name>
+        <text>Preparing_Coffee</text>
+      </name>
+      <graphics>
+        <position x="1396" y="799" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl38">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="1325" y="18" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl39">
+      <graphics>
+        <position x="1325" y="181" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl40">
+      <name>
+        <text>selected</text>
+      </name>
+      <graphics>
+        <position x="1327" y="481" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl41">
+      <name>
+        <text>checking</text>
+      </name>
+      <graphics>
+        <position x="1327" y="643" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl42">
+      <name>
+        <text>iTurnOnNOK</text>
+      </name>
+      <graphics>
+        <position x="971" y="179" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl43">
+      <name>
+        <text>iTurnOn</text>
+      </name>
+      <graphics>
+        <position x="966" y="111" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl44">
+      <name>
+        <text>iTurnOnOK</text>
+      </name>
+      <graphics>
+        <position x="972" y="247" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl45">
+      <name>
+        <text>iSelection</text>
+      </name>
+      <graphics>
+        <position x="964" y="398" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl46">
+      <name>
+        <text>iCoins</text>
+      </name>
+      <graphics>
+        <position x="961" y="578" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl47">
+      <name>
+        <text>iCoinsNOK</text>
+      </name>
+      <graphics>
+        <position x="962" y="512" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl48">
+      <name>
+        <text>iCoinsOK</text>
+      </name>
+      <graphics>
+        <position x="964" y="718" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl49">
+      <name>
+        <text>Faulty</text>
+      </name>
+      <graphics>
+        <position x="1233" y="1011" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl50">
+      <name>
+        <text>iTurnOff</text>
+      </name>
+      <graphics>
+        <position x="962" y="1077" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl51">
+      <name>
+        <text>iDone</text>
+      </name>
+      <graphics>
+        <position x="957" y="889" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl52">
+      <name>
+        <text>iError</text>
+      </name>
+      <graphics>
+        <position x="961" y="949" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <arc id="a2" source="pl2" target="tr4" />
+    <arc id="a3" source="pl16" target="tr18">
+      <graphics>
+        <position x="368" y="828" />
+      </graphics>
+    </arc>
+    <arc id="a8" source="tr18" target="pl16">
+      <graphics>
+        <position x="382" y="764" />
+      </graphics>
+    </arc>
+    <arc id="a11" source="pl16" target="tr21" />
+    <arc id="a12" source="pl16" target="tr23" />
+    <arc id="a13" source="tr31" target="pl2" />
+    <arc id="a14" source="pl34" target="tr11" />
+    <arc id="a15" source="pl4" target="tr8" />
+    <arc id="a16" source="tr8" target="pl34">
+      <graphics>
+        <position x="363" y="53" />
+      </graphics>
+    </arc>
+    <arc id="a20" source="pl4" target="tr31" />
+    <arc id="a21" source="tr4" target="pl25" />
+    <arc id="a29" source="pl25" target="tr24" />
+    <arc id="a30" source="pl29" target="tr30" />
+    <arc id="a33" source="tr24" target="pl29" />
+    <arc id="a34" source="tr30" target="pl25" />
+    <arc id="a35" source="tr35" target="pl16" />
+    <arc id="a36" source="tr23" target="pl34">
+      <graphics>
+        <position x="0" y="881" />
+        <position x="1" y="9" />
+      </graphics>
+    </arc>
+    <arc id="a37" source="pl29" target="tr35" />
+    <arc id="a39" source="tr11" target="pl4" />
+    <arc id="a40" source="tr8" target="pl7" />
+    <arc id="a41" source="pl5" target="tr11" />
+    <arc id="a42" source="tr31" target="pl6" />
+    <arc id="a43" source="pl11" target="tr4" />
+    <arc id="a44" source="pl13" target="tr24" />
+    <arc id="a45" source="tr30" target="pl15" />
+    <arc id="a46" source="tr35" target="pl17" />
+    <arc id="a47" source="tr21" target="pl19" />
+    <arc id="a49" source="pl22" target="tr25" />
+    <arc id="a50" source="pl19" target="tr25" />
+    <arc id="a51" source="tr25" target="pl34">
+      <graphics>
+        <position x="57" y="987" />
+        <position x="57" y="81" />
+      </graphics>
+    </arc>
+    <arc id="a52" source="tr23" target="pl31" />
+    <arc id="a53" source="tr21" target="pl30" />
+    <arc id="a55" source="pl36" target="tr53" />
+    <arc id="a56" source="pl37" target="tr54">
+      <graphics>
+        <position x="1440" y="836" />
+      </graphics>
+    </arc>
+    <arc id="a57" source="tr54" target="pl37">
+      <graphics>
+        <position x="1454" y="772" />
+      </graphics>
+    </arc>
+    <arc id="a58" source="pl37" target="tr55" />
+    <arc id="a59" source="pl37" target="tr56" />
+    <arc id="a60" source="tr57" target="pl36" />
+    <arc id="a61" source="pl38" target="tr58" />
+    <arc id="a62" source="pl39" target="tr59" />
+    <arc id="a63" source="tr59" target="pl38">
+      <graphics>
+        <position x="1248" y="61" />
+      </graphics>
+    </arc>
+    <arc id="a64" source="pl39" target="tr57" />
+    <arc id="a65" source="tr53" target="pl40" />
+    <arc id="a66" source="pl40" target="tr60" />
+    <arc id="a67" source="pl41" target="tr61" />
+    <arc id="a68" source="tr60" target="pl41" />
+    <arc id="a69" source="tr61" target="pl40" />
+    <arc id="a70" source="tr62" target="pl37" />
+    <arc id="a71" source="tr56" target="pl38">
+      <graphics>
+        <position x="1615" y="819" />
+        <position x="1616" y="161" />
+      </graphics>
+    </arc>
+    <arc id="a72" source="pl41" target="tr62" />
+    <arc id="a74" source="tr58" target="pl39" />
+    <arc id="a75" source="tr59" target="pl42" />
+    <arc id="a76" source="pl43" target="tr58" />
+    <arc id="a77" source="tr57" target="pl44" />
+    <arc id="a78" source="pl45" target="tr53" />
+    <arc id="a79" source="pl46" target="tr60" />
+    <arc id="a80" source="tr61" target="pl47" />
+    <arc id="a81" source="tr62" target="pl48" />
+    <arc id="a82" source="tr55" target="pl49" />
+    <arc id="a84" source="pl50" target="tr64" />
+    <arc id="a85" source="pl49" target="tr64" />
+    <arc id="a86" source="tr64" target="pl38">
+      <graphics>
+        <position x="1673" y="1004" />
+        <position x="1672" y="80" />
+      </graphics>
+    </arc>
+    <arc id="a87" source="tr56" target="pl51" />
+    <arc id="a88" source="tr55" target="pl52" />
+  </net>
+</pnml>

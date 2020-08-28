@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <name>
+      <text>system</text>
+    </name>
+    <graphics />
+    <transition id="tr21">
+      <name>
+        <text>choose goods</text>
+      </name>
+      <graphics>
+        <position x="326" y="78" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr24">
+      <name>
+        <text>calculate price</text>
+      </name>
+      <graphics>
+        <position x="325" y="236" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr28">
+      <name>
+        <text>inform by call</text>
+      </name>
+      <graphics>
+        <position x="185" y="741" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr29">
+      <name>
+        <text>inform by mail</text>
+      </name>
+      <graphics>
+        <position x="567" y="728" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr33">
+      <name>
+        <text>ship express</text>
+      </name>
+      <graphics>
+        <position x="58" y="368" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr36">
+      <name>
+        <text>ship normal</text>
+      </name>
+      <graphics>
+        <position x="231" y="367" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr39">
+      <name>
+        <text>calculate bonus</text>
+      </name>
+      <graphics>
+        <position x="426" y="371" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr42">
+      <name>
+        <text>no bonus</text>
+      </name>
+      <graphics>
+        <position x="567" y="368" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr45">
+      <name>
+        <text>register bonus</text>
+      </name>
+      <graphics>
+        <position x="425" y="516" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr1">
+      <name>
+        <text>no information</text>
+      </name>
+      <graphics>
+        <position x="346" y="777" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl13">
+      <name>
+        <text>initial</text>
+      </name>
+      <graphics>
+        <position x="325" y="10" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl14">
+      <name>
+        <text>choosing</text>
+      </name>
+      <graphics>
+        <position x="327" y="146" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>calculating</text>
+      </name>
+      <graphics>
+        <position x="487" y="237" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl16">
+      <name>
+        <text>shipping</text>
+      </name>
+      <graphics>
+        <position x="172" y="236" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl17">
+      <name>
+        <text>noBonusReg</text>
+      </name>
+      <graphics>
+        <position x="565" y="507" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl18">
+      <name>
+        <text>calculatignB</text>
+      </name>
+      <graphics>
+        <position x="426" y="441" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl19">
+      <name>
+        <text>shipExpDone</text>
+      </name>
+      <graphics>
+        <position x="56" y="594" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl20">
+      <name>
+        <text>shipNormalDone</text>
+      </name>
+      <graphics>
+        <position x="230" y="590" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl30">
+      <name>
+        <text>final</text>
+      </name>
+      <graphics>
+        <position x="347" y="923" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl47">
+      <name>
+        <text>bonusReg</text>
+      </name>
+      <graphics>
+        <position x="427" y="597" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx53" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Fix the reason for deadlock
+Other points: Check this is a workflow net. Add closure and check that it is SCC</text>
+        </description>
+        <graphics>
+          <position x="328" y="996" />
+          <dimension x="656" y="48" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx1" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>workflow with deadlock</text>
+        </description>
+        <graphics>
+          <position x="333" y="1041" />
+          <dimension x="200" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a22" source="pl13" target="tr21" />
+    <arc id="a23" source="tr21" target="pl14" />
+    <arc id="a24" source="pl14" target="tr24" />
+    <arc id="a25" source="tr24" target="pl16" />
+    <arc id="a26" source="tr24" target="pl15" />
+    <arc id="a27" source="tr28" target="pl30" />
+    <arc id="a28" source="tr29" target="pl30" />
+    <arc id="a29" source="pl16" target="tr33" />
+    <arc id="a30" source="tr33" target="pl19" />
+    <arc id="a31" source="pl16" target="tr36" />
+    <arc id="a32" source="tr36" target="pl20" />
+    <arc id="a33" source="pl15" target="tr39" />
+    <arc id="a34" source="tr39" target="pl18" />
+    <arc id="a35" source="pl15" target="tr42" />
+    <arc id="a36" source="tr42" target="pl17" />
+    <arc id="a37" source="pl18" target="tr45" />
+    <arc id="a38" source="tr45" target="pl47" />
+    <arc id="a39" source="pl17" target="tr29" />
+    <arc id="a40" source="pl20" target="tr29" />
+    <arc id="a41" source="pl47" target="tr28" />
+    <arc id="a42" source="pl19" target="tr28" />
+    <arc id="a43" source="pl47" target="tr1" />
+    <arc id="a44" source="tr1" target="pl47" />
+    <arc id="a45" source="pl20" target="tr1" />
+    <arc id="a46" source="tr1" target="pl20" />
+    <arc id="a47" source="tr1" target="pl30" />
+  </net>
+</pnml>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <graphics />
+    <transition id="tr3">
+      <name>
+        <text>start</text>
+      </name>
+      <graphics>
+        <position x="415" y="146" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr5">
+      <name>
+        <text>taskB</text>
+      </name>
+      <graphics>
+        <position x="591" y="263" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr9">
+      <name>
+        <text>taskA</text>
+      </name>
+      <graphics>
+        <position x="257" y="256" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr13">
+      <name>
+        <text>taskC</text>
+      </name>
+      <graphics>
+        <position x="411" y="273" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr19">
+      <name>
+        <text>finish</text>
+      </name>
+      <graphics>
+        <position x="398" y="454" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr69">
+      <name>
+        <text>repeat</text>
+      </name>
+      <graphics>
+        <position x="16" y="259" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl2">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="414" y="76" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>doB</text>
+      </name>
+      <graphics>
+        <position x="591" y="194" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl10">
+      <name>
+        <text>doA</text>
+      </name>
+      <graphics>
+        <position x="256" y="186" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl16">
+      <name>
+        <text>doneA</text>
+      </name>
+      <graphics>
+        <position x="259" y="349" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl17">
+      <name>
+        <text>doneB</text>
+      </name>
+      <graphics>
+        <position x="596" y="351" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl18">
+      <name>
+        <text>done</text>
+      </name>
+      <graphics>
+        <position x="399" y="531" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx73" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Analyze behavior of Petri net and check its reachability graph</text>
+        </description>
+        <graphics>
+          <position x="355" y="12" />
+          <dimension x="510" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a15" source="pl2" target="tr3" />
+    <arc id="a16" source="tr3" target="pl6" />
+    <arc id="a17" source="pl6" target="tr5" />
+    <arc id="a18" source="tr3" target="pl10" />
+    <arc id="a19" source="pl10" target="tr9" />
+    <arc id="a20" source="pl10" target="tr13" />
+    <arc id="a21" source="pl6" target="tr13" />
+    <arc id="a22" source="pl17" target="tr19" />
+    <arc id="a23" source="tr19" target="pl18" />
+    <arc id="a24" source="pl16" target="tr19" />
+    <arc id="a25" source="tr9" target="pl16" />
+    <arc id="a26" source="tr5" target="pl17" />
+    <arc id="a27" source="tr13" target="pl17" />
+    <arc id="a28" source="tr13" target="pl16" />
+    <arc id="a29" source="pl18" target="tr69">
+      <graphics>
+        <position x="15" y="531" />
+      </graphics>
+    </arc>
+    <arc id="a30" source="tr69" target="pl2">
+      <graphics>
+        <position x="16" y="75" />
+      </graphics>
+    </arc>
+  </net>
+</pnml>
