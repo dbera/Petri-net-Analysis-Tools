@@ -5,7 +5,7 @@ PnAT is a set of tools to analyze and visualize Petri nets and and its reachabil
 When you download PnAT, you will find two executable JAR files, namely 
 
   * **LaunchPetriNetAnalysis.jar**
-    * Input: Accepts a Petri net model in PNML format (tested against models from Yasper and Tapaal). Yasper is the recommended editor.
+    * Input: Accepts a Petri net model in PNML format (tested against models from Yasper and Tapaal).
     * Analysis Options
       * state machine net
       * workflow net
