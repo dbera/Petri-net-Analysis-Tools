@@ -2,7 +2,7 @@
 
 PnAT is a set of tools to analyze and visualize Petri nets and and its reachability graph. It works well with [Yasper](http://www.yasper.org/), a modeling and simulation tool for Petri nets. The idea is that a user defines a Petri net model in Yasper and then uses PnAT in conjunction to analyze structural and behavioral properties. 
 
-Some properties such as open petri nets, leg and choice properties are specific to models describing communicating component-based system. In such a system, components provide and consume services over interfaces. An interface is defined as a portnet [1]. A component net is defined in terms of refinements with provided and required portnets [1]. Such models can be modeled in Yasper using the subnets feature and interpreting reference places as interface places of a component. 
+Some properties such as open petri nets, leg and choice properties are specific to models describing communicating component-based system as described in my [thesis](https://research.tue.nl/en/publications/petri-nets-for-modeling-robots). In such systems, components provide and consume services over interfaces. An interface is more than just a list of events, its behavior is defined in terms of a class of Petri nets called portnets. A component is also a Petri net obtained by refinements with provided and required portnets. Such kind of constructs can be modeled in Yasper using the subnet feature and interpreting reference places as interface places of a component. 
 
 ![GitHub Logo](/Images/yasper.png)
 
@@ -11,7 +11,11 @@ Beware that subnets more than one level deep are uninterpreted. Also ensure that
 When you download PnAT, you will find two executable JAR files
 
   * **LaunchPetriNetAnalysis.jar**
-    * **Input:** Accepts a Petri net model in PNML format (tested against models from [Yasper](http://www.yasper.org/) and [Tapaal](https://www.tapaal.net/)).
+    * **Input:** Accepts a Petri net model in PNML format 
+    * **Tested** so far against modeling tools such as
+      * [Yasper](http://www.yasper.org/), 
+      * [Tapaal](https://www.tapaal.net/)),
+      * [GSPN GUI](http://www.di.unito.it/~amparore/mc4cslta/editor.html)
     * **Analysis Options**
       * state machine net
       * workflow net
