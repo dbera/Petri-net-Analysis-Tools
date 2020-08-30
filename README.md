@@ -8,13 +8,17 @@ Some properties such as open petri nets, leg and choice properties are specific 
 
 Beware that subnets more than one level deep are uninterpreted. Also ensure that all places, transitions and nets have labels. 
 
+# Popular Usecases
+  * Reachability Analysis of Communication Protocols
+
+# Usage
 When you download PnAT, you will find two executable JAR files
 
   * **LaunchPetriNetAnalysis.jar**
     * **Input:** Accepts a Petri net model in PNML format 
     * **Tested** so far against modeling tools such as
       * [Yasper](http://www.yasper.org/), 
-      * [Tapaal](https://www.tapaal.net/)),
+      * [Tapaal](https://www.tapaal.net/),
       * [GSPN GUI](http://www.di.unito.it/~amparore/mc4cslta/editor.html)
     * **Analysis Options**
       * state machine net
