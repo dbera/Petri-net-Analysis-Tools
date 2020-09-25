@@ -44,7 +44,11 @@ When you download PnAT, you will find two executable JAR files
       * reload file
 
     ![GitHub Logo](/Images/PnATBehavioral.png)
-    
+
+# References
+ * https://research.tue.nl/en/publications/petri-nets-for-modeling-robots
+
+
 # Author
  * Debjyoti Bera, The Netherlands
  
