@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+  <toolspecific> extensions to EPNML 1.1 for the Yasper tool, version 4
+  see ../Yasper_EPNML.xsd for usage
+  
+  by Maarten Leurs and Reinier Post, (c) Yasper/Petriweb project, TU Eindhoven/Deloitte
+ 
+  Wrt. version 1.1.2, a "flusher" arc is now called "reset", and <toolspecific>
+  sections from other tools are now allowed (at the expense of not checking our own).
+  Wrt. version 1.1.3, special arcs, places and transitions have been removed.
+
+  As of August 2004, this schema is no longer 100% up to date with the actual input language recognised and used by Yasper.
+  This is possible since the toolspecific subschema is no longer invoked by the main schema, for technical reasons related to namespaces.
+  
+  -->
+<xs:schema elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="../Graphics.xsd" />
+    <xs:simpleType name="tool">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse" />
+            <!-- so does RELAX-NG -->
+            <xs:enumeration value="Yasper" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="version">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse" />
+            <!-- so does RELAX-NG -->
+            <xs:enumeration value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:group name="anyToolSpecific">
+        <xs:choice>
+            <xs:element name="toolspecific">
+                <xs:complexType mixed="true">
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:any processContents="skip" />
+                    </xs:choice>
+                    <xs:attribute name="tool" type="xs:string" use="required" />
+                    <xs:attribute name="version" type="xs:string" use="required" />
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
+    <xs:complexType name="transitionSpecific">
+        <xs:sequence>
+            <xs:element name="tokenCaseSensitive" type="xs:boolean" minOccurs="0" maxOccurs="1" />
+            <xs:element name="roles" type="roles" minOccurs="0" maxOccurs="1" />
+            <xs:element name="cost" type="cost" minOccurs="0" maxOccurs="1" />
+            <xs:element name="processingTime" type="processingTime" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="tool" type="xs:string" use="required" />
+        <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="roles">
+        <!-- note: there is a new syntax for roles which isn't specified here -->
+        <xs:sequence>
+            <xs:element name="role" type="role" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="role">
+        <xs:sequence>
+            <xs:element name="text" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="cost">
+        <xs:sequence>
+            <xs:element name="fixed" type="stat" minOccurs="0" maxOccurs="1" />
+            <xs:element name="variable" type="stat" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="processingTime">
+        <xs:sequence>
+            <xs:element name="mean" type="stat" minOccurs="0" maxOccurs="1" />
+            <xs:element name="deviation" type="stat" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="connectionWeights">
+        <!-- TODO: the connectionWeights syntax has not been verified in any way -->
+        <!-- TODO: specify the constraint that a @connection must be a place or refplace id -->    
+        <xs:sequence>
+            <xs:element name="connectionWeight" type="connectionWeight" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="connectionWeight">
+        <xs:sequence>
+            <xs:element name="weight" type="stat" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="connection" type="xs:IDREF" use="required" />
+    </xs:complexType>   
+    <xs:complexType name="stat">
+        <xs:sequence>
+            <xs:element name="text" type="nonNegativeDecimal" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="nonNegativeDecimal">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="referencePlaceSpecific">
+        <xs:sequence>
+            <xs:element name="pathGraphics" type="nodeGraphics" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="tool" type="xs:string" use="required" />
+        <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+</xs:schema>

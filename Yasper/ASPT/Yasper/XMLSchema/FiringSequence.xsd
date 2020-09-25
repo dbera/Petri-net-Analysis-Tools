@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="FiringSequence" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.petriweb.org/specs/fsq/FiringSequence.xsd" version="1.0" targetNamespace="http://www.petriweb.org/specs/fsq/FiringSequence.xsd">
+    <xs:element name="firingSequence" type="firingSequence" />
+    <xs:complexType name="firingSequence">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="firing" type="firing" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="firing">
+        <xs:sequence>
+            <xs:element name="actorname" type="pnmlStringAttribute" minOccurs="0" maxOccurs="1" />
+            <xs:element name="consume" type="halffiring" minOccurs="0" maxOccurs="1" />
+            <xs:element name="produce" type="halffiring" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="actor" type="xs:NMTOKEN" use="optional" />
+        <xs:attribute name="after" type="xs:double" use="optional" />
+    </xs:complexType>
+    <xs:complexType name="halffiring">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="token" type="token" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="token">
+        <xs:sequence>
+            <xs:element name="placename" type="pnmlStringAttribute" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="place" type="xs:NMTOKEN" use="optional" />
+    </xs:complexType>
+    <xs:complexType name="pnmlStringAttribute">
+        <xs:sequence>
+            <!-- it's not a sequence, but I don't know how just to put an element here! - rp -->
+            <xs:element name="text" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

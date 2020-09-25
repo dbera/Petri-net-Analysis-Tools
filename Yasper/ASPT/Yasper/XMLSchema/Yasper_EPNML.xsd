@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+  XML Schema for EPNML 1.1 with (unused) <toolspecific> extensions for Yasper, version 5
+  
+  by Maarten Leurs and Reinier Post, (c) Yasper/Petriweb project, TU Eindhoven/Deloitte
+  
+  Incompatible with 1.1 version 0, both in the documents it defines and in the naming of its types.
+  Slightly more permissive than version 3 (more combinations of C/R/U/D are allowed on store arcs).
+
+  This version of the schema doesn't try to incorporate all the Yasper-specific constraints on the use of EPNML 1.1,
+  such as the fact that the number of arcs between the same nodes is limited, or the fact that inhibitors or
+  biflows cannot go to XOR transitions, or the fact that referencePlaces can have at most one arc.
+
+  Note: namespacing and <toolspecific> section checking are not implemented.
+  (The type attribute of <net> should also be namespaced.)
+  
+  -->
+<xs:schema elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="Labels.xsd" />
+	<xs:include schemaLocation="toolspecific/Yasper.xsd" />
+	<xs:element name="pnml" type="pnml" />
+	<xs:complexType name="pnml">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="net" type="net" maxOccurs="unbounded">
+				<xs:key name="placeKey">
+					<xs:selector xpath="place" />
+					<xs:field xpath="@id" />
+				</xs:key>
+				<xs:key name="transitionKey">
+					<xs:selector xpath="transition" />
+					<xs:field xpath="@id" />
+				</xs:key>
+				<xs:key name="pageKey">
+					<xs:selector xpath="page" />
+					<xs:field xpath="@id" />
+				</xs:key>
+			</xs:element>
+			<xs:group ref="anyToolSpecific" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="place">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="type" type="placeType" minOccurs="0" />
+			<xs:element name="graphics" type="nodeGraphics" />
+			<xs:element name="initialMarking" type="initialMarking" />
+			<xs:group ref="commonLabel" />
+			<xs:group ref="anyToolSpecific" />
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+	<xs:complexType name="arc">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="type" type="arcType" minOccurs="0" />
+			<xs:element name="graphics" type="edgeGraphics" minOccurs="0" />
+			<xs:element name="inscription" type="inscription" minOccurs="0" />
+			<xs:group ref="commonLabel" />
+			<xs:group ref="anyToolSpecific" />
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+		<xs:attribute name="source" type="xs:IDREF" use="required" />
+		<xs:attribute name="target" type="xs:IDREF" use="required" />
+		<!-- TODO: specify the constraint that every @source and @target must be a transition or place or refPlace @id -->
+	</xs:complexType>
+	<xs:complexType name="net">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="graphics" type="netGraphics" minOccurs="0" />
+			<xs:group ref="netObject" />
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+		<xs:attribute name="type" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="transition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="type" type="transitionType" minOccurs="0" />
+			<xs:element name="graphics" type="nodeGraphics" />
+			<xs:element name="transformation" type="transformation" minOccurs="0" />
+			<xs:group ref="commonLabel" />
+			<xs:group ref="anyToolSpecific" />
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+	<xs:group name="netObject">
+		<xs:choice>
+			<xs:element name="place">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="place" />
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="transition" type="transition" />
+			<xs:element name="arc" type="arc" />
+			<xs:element name="page" type="page" minOccurs="0" />
+			<xs:group ref="commonLabel" />
+			<xs:group ref="anyToolSpecific" />
+		</xs:choice>
+	</xs:group>
+	<xs:complexType name="page">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="referencePlace" type="referencePlace" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="graphics" type="netGraphics" />
+			<xs:element name="type" type="transitionType" minOccurs="0" />
+			<xs:group ref="netObject" />
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+	<xs:complexType name="referencePlace">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="graphics" type="nodeGraphics" />
+			<xs:group ref="commonLabel" />
+			<xs:group ref="anyToolSpecific" />
+		</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+		<xs:attribute name="ref" type="xs:IDREF" use="required" />
+	</xs:complexType>
+</xs:schema>

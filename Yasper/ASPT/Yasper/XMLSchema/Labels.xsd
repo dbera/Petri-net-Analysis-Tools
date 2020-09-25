@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+  PNML label conventions for EPNML 1.1 and the Yasper tool, version 3
+  see ./Yasper_EPNML.xsd for usage
+  
+  by Maarten Leurs and Reinier Post, (c) Yasper/Petriweb project, TU Eindhoven/Deloitte
+
+  this version allows some non-EPNML-1.1 arc types
+  collapses whitespace in enumerations, like RELAX-NG does (and consequently, PNML as well)
+  -->
+<xs:schema elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="Graphics.xsd" />
+	<xs:include schemaLocation="toolspecific/Yasper.xsd" />
+	<xs:group name="commonLabel">
+		<xs:sequence>
+			<xs:element name="name" type="pnmlAnnotation" minOccurs="0" />
+			<xs:element name="description" type="pnmlAnnotation" minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="pnmlAnnotation">
+		<xs:sequence>
+			<xs:element name="text" type="xs:string" />
+			<xs:element name="graphics" type="annotationGraphics" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="placeType">
+		<xs:sequence>
+			<xs:element name="text">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:whiteSpace value="collapse" />
+						<!-- so does RELAX-NG -->
+						<xs:enumeration value="channel" />
+						<xs:enumeration value="store" />
+						<xs:enumeration value="input" />
+						<xs:enumeration value="output" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="initialMarking">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="text" type="xs:nonNegativeInteger" />
+			<xs:element name="graphics" type="annotationGraphics" minOccurs="0" />
+			<xs:group ref="anyToolSpecific" minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="arcType">
+		<xs:sequence>
+			<xs:element name="text">
+				<xs:simpleType>
+					<xs:union>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:whiteSpace value="collapse" />
+								<!-- so does RELAX-NG -->
+								<xs:enumeration value="inflow" />
+								<xs:enumeration value="outflow" />
+								<xs:enumeration value="biflow" />
+								<xs:enumeration value="inhibitor" />
+								<xs:enumeration value="reset" />
+							</xs:restriction>
+						</xs:simpleType>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:whiteSpace value="collapse" />
+								<!-- so does RELAX-NG -->
+								<xs:pattern value="[CRUD]{0,4}" />
+								<!-- a bit too permissive, allowing repetitions such as "DD" -->
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:union>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="inscription">
+		<xs:sequence>
+			<xs:element name="text" type="xs:string" />
+			<xs:element name="graphics" type="annotationGraphics" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="transitionType">
+		<xs:sequence>
+			<xs:element name="text">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:whiteSpace value="collapse" />
+						<!-- so does RELAX-NG -->
+						<xs:enumeration value="AND" />
+						<xs:enumeration value="XOR" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="transformation">
+		<xs:sequence>
+			<xs:element name="text" type="xs:string" />
+			<xs:element name="graphics" type="annotationGraphics" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
