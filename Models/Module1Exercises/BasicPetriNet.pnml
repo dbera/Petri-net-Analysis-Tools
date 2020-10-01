@@ -7,7 +7,7 @@
         <text>start</text>
       </name>
       <graphics>
-        <position x="268" y="171" />
+        <position x="455" y="181" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -16,7 +16,7 @@
         <text>taskB</text>
       </name>
       <graphics>
-        <position x="439" y="288" />
+        <position x="626" y="298" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -25,7 +25,7 @@
         <text>taskA</text>
       </name>
       <graphics>
-        <position x="105" y="281" />
+        <position x="292" y="291" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -34,7 +34,7 @@
         <text>taskC</text>
       </name>
       <graphics>
-        <position x="274" y="301" />
+        <position x="461" y="311" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -43,7 +43,16 @@
         <text>finish</text>
       </name>
       <graphics>
-        <position x="265" y="457" />
+        <position x="452" y="467" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr25">
+      <name>
+        <text>close</text>
+      </name>
+      <graphics>
+        <position x="27" y="304" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -52,11 +61,11 @@
         <text>idle</text>
       </name>
       <graphics>
-        <position x="267" y="101" />
+        <position x="454" y="111" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
-        <text>1</text>
+        <text>3</text>
       </initialMarking>
     </place>
     <place id="pl6">
@@ -64,7 +73,7 @@
         <text>doB</text>
       </name>
       <graphics>
-        <position x="439" y="219" />
+        <position x="626" y="229" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -76,7 +85,7 @@
         <text>doA</text>
       </name>
       <graphics>
-        <position x="104" y="211" />
+        <position x="291" y="221" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -88,7 +97,7 @@
         <text>doneA</text>
       </name>
       <graphics>
-        <position x="107" y="374" />
+        <position x="294" y="384" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -100,7 +109,7 @@
         <text>doneB</text>
       </name>
       <graphics>
-        <position x="440" y="376" />
+        <position x="627" y="386" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -112,7 +121,7 @@
         <text>done</text>
       </name>
       <graphics>
-        <position x="266" y="534" />
+        <position x="453" y="544" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -130,19 +139,21 @@
         </graphics>
       </comment>
     </toolspecific>
-    <arc id="a15" source="pl2" target="tr3" />
-    <arc id="a16" source="tr3" target="pl6" />
-    <arc id="a17" source="pl6" target="tr5" />
-    <arc id="a18" source="tr3" target="pl10" />
-    <arc id="a19" source="pl10" target="tr9" />
-    <arc id="a20" source="pl10" target="tr13" />
-    <arc id="a21" source="pl6" target="tr13" />
-    <arc id="a22" source="pl17" target="tr19" />
-    <arc id="a23" source="tr19" target="pl18" />
-    <arc id="a24" source="pl16" target="tr19" />
-    <arc id="a25" source="tr9" target="pl16" />
-    <arc id="a26" source="tr5" target="pl17" />
-    <arc id="a27" source="tr13" target="pl17" />
-    <arc id="a28" source="tr13" target="pl16" />
+    <arc id="a1" source="pl2" target="tr3" />
+    <arc id="a2" source="tr3" target="pl6" />
+    <arc id="a3" source="pl6" target="tr5" />
+    <arc id="a4" source="tr3" target="pl10" />
+    <arc id="a5" source="pl10" target="tr9" />
+    <arc id="a6" source="pl10" target="tr13" />
+    <arc id="a7" source="pl6" target="tr13" />
+    <arc id="a8" source="pl17" target="tr19" />
+    <arc id="a9" source="tr19" target="pl18" />
+    <arc id="a10" source="pl16" target="tr19" />
+    <arc id="a11" source="tr9" target="pl16" />
+    <arc id="a12" source="tr5" target="pl17" />
+    <arc id="a13" source="tr13" target="pl17" />
+    <arc id="a14" source="tr13" target="pl16" />
+    <arc id="a31" source="pl18" target="tr25" />
+    <arc id="a32" source="tr25" target="pl2" />
   </net>
 </pnml>

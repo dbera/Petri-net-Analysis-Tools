@@ -7,7 +7,7 @@
         <text>insertCoin</text>
       </name>
       <graphics>
-        <position x="134" y="287" />
+        <position x="134" y="255" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -16,7 +16,7 @@
         <text>Exception</text>
       </name>
       <graphics>
-        <position x="303" y="340" />
+        <position x="303" y="308" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -25,7 +25,7 @@
         <text>ResetMachine</text>
       </name>
       <graphics>
-        <position x="304" y="524" />
+        <position x="304" y="492" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -34,7 +34,7 @@
         <text>checkSaldo</text>
       </name>
       <graphics>
-        <position x="132" y="460" />
+        <position x="132" y="428" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -43,7 +43,7 @@
         <text>Ack</text>
       </name>
       <graphics>
-        <position x="16" y="140" />
+        <position x="16" y="108" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -52,7 +52,7 @@
         <text>insertCoin</text>
       </name>
       <graphics>
-        <position x="783" y="288" />
+        <position x="783" y="256" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -61,7 +61,7 @@
         <text>Exception</text>
       </name>
       <graphics>
-        <position x="952" y="341" />
+        <position x="952" y="309" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -70,7 +70,7 @@
         <text>ResetMachine</text>
       </name>
       <graphics>
-        <position x="953" y="525" />
+        <position x="953" y="493" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -79,7 +79,7 @@
         <text>checkSaldo</text>
       </name>
       <graphics>
-        <position x="781" y="459" />
+        <position x="781" y="427" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -88,25 +88,7 @@
         <text>Ack</text>
       </name>
       <graphics>
-        <position x="665" y="141" />
-        <dimension x="32" y="32" />
-      </graphics>
-    </transition>
-    <transition id="tr16">
-      <name>
-        <text>Start</text>
-      </name>
-      <graphics>
-        <position x="328" y="92" />
-        <dimension x="32" y="32" />
-      </graphics>
-    </transition>
-    <transition id="tr24">
-      <name>
-        <text>Start</text>
-      </name>
-      <graphics>
-        <position x="951" y="89" />
+        <position x="665" y="109" />
         <dimension x="32" y="32" />
       </graphics>
     </transition>
@@ -115,11 +97,11 @@
         <text>On</text>
       </name>
       <graphics>
-        <position x="238" y="196" />
+        <position x="238" y="164" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
-        <text>0</text>
+        <text>1</text>
       </initialMarking>
     </place>
     <place id="pl3">
@@ -127,7 +109,7 @@
         <text>CheckingCoin</text>
       </name>
       <graphics>
-        <position x="134" y="375" />
+        <position x="134" y="343" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -139,7 +121,7 @@
         <text>Fault</text>
       </name>
       <graphics>
-        <position x="303" y="422" />
+        <position x="303" y="390" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -151,7 +133,7 @@
         <text>iCoins</text>
       </name>
       <graphics>
-        <position x="518" y="286" />
+        <position x="518" y="254" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -163,7 +145,7 @@
         <text>iError</text>
       </name>
       <graphics>
-        <position x="518" y="342" />
+        <position x="518" y="310" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -175,7 +157,7 @@
         <text>iReset</text>
       </name>
       <graphics>
-        <position x="518" y="526" />
+        <position x="518" y="494" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -187,7 +169,7 @@
         <text>iOutcome</text>
       </name>
       <graphics>
-        <position x="518" y="458" />
+        <position x="518" y="426" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -199,7 +181,7 @@
         <text>checkingSaldo</text>
       </name>
       <graphics>
-        <position x="15" y="459" />
+        <position x="15" y="427" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -211,7 +193,7 @@
         <text>iAck</text>
       </name>
       <graphics>
-        <position x="512" y="142" />
+        <position x="512" y="110" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -223,11 +205,11 @@
         <text>On</text>
       </name>
       <graphics>
-        <position x="887" y="197" />
+        <position x="887" y="165" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
-        <text>0</text>
+        <text>1</text>
       </initialMarking>
     </place>
     <place id="pl11">
@@ -235,7 +217,7 @@
         <text>CheckingCoin</text>
       </name>
       <graphics>
-        <position x="783" y="376" />
+        <position x="783" y="344" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -247,7 +229,7 @@
         <text>Fault</text>
       </name>
       <graphics>
-        <position x="952" y="423" />
+        <position x="952" y="391" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -259,43 +241,7 @@
         <text>checkingSaldo</text>
       </name>
       <graphics>
-        <position x="664" y="405" />
-        <dimension x="20" y="20" />
-      </graphics>
-      <initialMarking>
-        <text>0</text>
-      </initialMarking>
-    </place>
-    <place id="pl13">
-      <name>
-        <text>OFF</text>
-      </name>
-      <graphics>
-        <position x="328" y="18" />
-        <dimension x="20" y="20" />
-      </graphics>
-      <initialMarking>
-        <text>1</text>
-      </initialMarking>
-    </place>
-    <place id="pl19">
-      <name>
-        <text>OFF</text>
-      </name>
-      <graphics>
-        <position x="951" y="13" />
-        <dimension x="20" y="20" />
-      </graphics>
-      <initialMarking>
-        <text>1</text>
-      </initialMarking>
-    </place>
-    <place id="pl27">
-      <name>
-        <text>iStart</text>
-      </name>
-      <graphics>
-        <position x="512" y="91" />
+        <position x="664" y="373" />
         <dimension x="20" y="20" />
       </graphics>
       <initialMarking>
@@ -304,7 +250,7 @@
     </place>
     <page id="ip1">
       <graphics>
-        <position x="514" y="310" />
+        <position x="514" y="278" />
         <dimension x="82" y="508" />
       </graphics>
       <toolspecific tool="Yasper" version="2.0.5.0">
@@ -320,7 +266,7 @@
 Then check what happens when we remove Ack? Why?</text>
         </description>
         <graphics>
-          <position x="523" y="649" />
+          <position x="523" y="617" />
           <dimension x="468" y="48" />
         </graphics>
       </comment>
@@ -331,7 +277,7 @@ Then check what happens when we remove Ack? Why?</text>
           <text>SERVER</text>
         </description>
         <graphics>
-          <position x="164" y="28" />
+          <position x="251" y="12" />
           <dimension x="88" y="24" />
         </graphics>
       </comment>
@@ -342,64 +288,58 @@ Then check what happens when we remove Ack? Why?</text>
           <text>CLIENT</text>
         </description>
         <graphics>
-          <position x="789" y="12" />
+          <position x="884" y="16" />
           <dimension x="80" y="24" />
         </graphics>
       </comment>
     </toolspecific>
-    <arc id="a1" source="pl2" target="tr11" />
-    <arc id="a2" source="tr11" target="pl3" />
-    <arc id="a3" source="pl2" target="tr12" />
-    <arc id="a4" source="tr12" target="pl4" />
-    <arc id="a5" source="pl5" target="tr11" />
-    <arc id="a6" source="tr12" target="pl6" />
-    <arc id="a7" source="pl4" target="tr13" />
-    <arc id="a8" source="tr13" target="pl2">
+    <arc id="a16" source="pl2" target="tr11" />
+    <arc id="a17" source="tr11" target="pl3" />
+    <arc id="a18" source="pl2" target="tr12" />
+    <arc id="a19" source="tr12" target="pl4" />
+    <arc id="a20" source="pl5" target="tr11" />
+    <arc id="a21" source="tr12" target="pl6" />
+    <arc id="a22" source="pl4" target="tr13" />
+    <arc id="a23" source="tr13" target="pl2">
       <graphics>
-        <position x="397" y="444" />
-        <position x="397" y="267" />
+        <position x="397" y="412" />
+        <position x="397" y="235" />
       </graphics>
     </arc>
-    <arc id="a9" source="pl7" target="tr13" />
-    <arc id="a10" source="pl3" target="tr14" />
-    <arc id="a11" source="tr14" target="pl8" />
-    <arc id="a12" source="tr14" target="pl9" />
-    <arc id="a13" source="pl9" target="tr15" />
-    <arc id="a14" source="tr15" target="pl2">
+    <arc id="a24" source="pl7" target="tr13" />
+    <arc id="a25" source="pl3" target="tr14" />
+    <arc id="a26" source="tr14" target="pl8" />
+    <arc id="a27" source="tr14" target="pl9" />
+    <arc id="a28" source="pl9" target="tr15" />
+    <arc id="a29" source="tr15" target="pl2">
       <graphics>
-        <position x="71" y="196" />
+        <position x="71" y="164" />
       </graphics>
     </arc>
-    <arc id="a15" source="pl10" target="tr15" />
-    <arc id="a46" source="pl1" target="tr19" />
-    <arc id="a47" source="tr19" target="pl11" />
-    <arc id="a48" source="pl1" target="tr20" />
-    <arc id="a49" source="tr20" target="pl12" />
-    <arc id="a50" source="pl12" target="tr21" />
-    <arc id="a51" source="tr21" target="pl1">
+    <arc id="a30" source="pl10" target="tr15" />
+    <arc id="a31" source="pl1" target="tr19" />
+    <arc id="a32" source="tr19" target="pl11" />
+    <arc id="a33" source="pl1" target="tr20" />
+    <arc id="a34" source="tr20" target="pl12" />
+    <arc id="a35" source="pl12" target="tr21" />
+    <arc id="a36" source="tr21" target="pl1">
       <graphics>
-        <position x="1046" y="445" />
-        <position x="1046" y="268" />
+        <position x="1046" y="413" />
+        <position x="1046" y="236" />
       </graphics>
     </arc>
-    <arc id="a52" source="pl11" target="tr22" />
-    <arc id="a53" source="tr22" target="pl17" />
-    <arc id="a54" source="pl17" target="tr23" />
-    <arc id="a55" source="tr23" target="pl1">
+    <arc id="a37" source="pl11" target="tr22" />
+    <arc id="a38" source="tr22" target="pl17" />
+    <arc id="a39" source="pl17" target="tr23" />
+    <arc id="a40" source="tr23" target="pl1">
       <graphics>
-        <position x="837" y="143" />
+        <position x="837" y="111" />
       </graphics>
     </arc>
-    <arc id="a56" source="pl8" target="tr22" />
-    <arc id="a57" source="tr21" target="pl7" />
-    <arc id="a58" source="pl6" target="tr20" />
-    <arc id="a59" source="tr19" target="pl5" />
-    <arc id="a60" source="tr23" target="pl10" />
-    <arc id="a61" source="pl13" target="tr16" />
-    <arc id="a62" source="tr16" target="pl2" />
-    <arc id="a63" source="pl19" target="tr24" />
-    <arc id="a64" source="tr24" target="pl1" />
-    <arc id="a65" source="tr24" target="pl27" />
-    <arc id="a66" source="pl27" target="tr16" />
+    <arc id="a41" source="pl8" target="tr22" />
+    <arc id="a42" source="tr21" target="pl7" />
+    <arc id="a43" source="pl6" target="tr20" />
+    <arc id="a44" source="tr19" target="pl5" />
+    <arc id="a45" source="tr23" target="pl10" />
   </net>
 </pnml>

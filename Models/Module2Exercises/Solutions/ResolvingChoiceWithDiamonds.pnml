@@ -146,24 +146,6 @@
         <dimension x="32" y="32" />
       </graphics>
     </transition>
-    <transition id="tr4">
-      <name>
-        <text>start</text>
-      </name>
-      <graphics>
-        <position x="291" y="158" />
-        <dimension x="32" y="32" />
-      </graphics>
-    </transition>
-    <transition id="tr7">
-      <name>
-        <text>start</text>
-      </name>
-      <graphics>
-        <position x="1443" y="158" />
-        <dimension x="32" y="32" />
-      </graphics>
-    </transition>
     <place id="pl4">
       <name>
         <text>On</text>
@@ -356,43 +338,10 @@
         <text>0</text>
       </initialMarking>
     </place>
-    <place id="pl2">
-      <graphics>
-        <position x="1443" y="85" />
-        <dimension x="20" y="20" />
-      </graphics>
-      <initialMarking>
-        <text>0</text>
-      </initialMarking>
-    </place>
-    <place id="pl3">
-      <name>
-        <text>OFF</text>
-      </name>
-      <graphics>
-        <position x="290" y="95" />
-        <dimension x="20" y="20" />
-      </graphics>
-      <initialMarking>
-        <text>1</text>
-      </initialMarking>
-    </place>
-    <place id="pl11">
-      <name>
-        <text>iStart</text>
-      </name>
-      <graphics>
-        <position x="846" y="158" />
-        <dimension x="20" y="20" />
-      </graphics>
-      <initialMarking>
-        <text>0</text>
-      </initialMarking>
-    </place>
     <page id="ip1">
       <graphics>
-        <position x="849" y="476" />
-        <dimension x="92" y="704" />
+        <position x="849" y="496" />
+        <dimension x="92" y="662" />
       </graphics>
       <toolspecific tool="Yasper" version="2.0.5.0">
         <inline xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
@@ -510,11 +459,5 @@
     <arc id="a46" source="tr62" target="pl9" />
     <arc id="a47" source="tr27" target="pl38" />
     <arc id="a48" source="tr64" target="pl55" />
-    <arc id="a97" source="pl3" target="tr4" />
-    <arc id="a98" source="tr4" target="pl4" />
-    <arc id="a99" source="pl2" target="tr7" />
-    <arc id="a100" source="tr7" target="pl50" />
-    <arc id="a101" source="tr7" target="pl11" />
-    <arc id="a102" source="pl11" target="tr4" />
   </net>
 </pnml>

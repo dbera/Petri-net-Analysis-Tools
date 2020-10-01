@@ -1,0 +1,454 @@
+DGS004
+"reachabilitygraph.dgs" 0 0
+
+an N0 label: "N0" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: idle has Tokens: 1
+   + Place: lock has Tokens: 1" 
+
+an N1 label: "N1" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N2 label: "N2" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: acquired has Tokens: 1
+   + Place: _waiting has Tokens: 1" 
+
+an N3 label: "N3" ui.name =  "
+   + Place: busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1" 
+
+an N4 label: "N4" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N5 label: "N5" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N6 label: "N6" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _acquired has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N7 label: "N7" ui.name =  "
+   + Place: _busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N8 label: "N8" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _released has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N9 label: "N9" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N10 label: "N10" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: done has Tokens: 1" 
+
+an N11 label: "N11" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N12 label: "N12" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: acquired has Tokens: 1" 
+
+an N13 label: "N13" ui.name =  "
+   + Place: busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1" 
+
+an N14 label: "N14" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N15 label: "N15" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N16 label: "N16" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N17 label: "N17" ui.name =  "
+   + Place: busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1" 
+
+an N18 label: "N18" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N19 label: "N19" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: done has Tokens: 1" 
+
+an N20 label: "N20" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N21 label: "N21" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N22 label: "N22" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N23 label: "N23" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N24 label: "N24" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N25 label: "N25" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: acquired has Tokens: 1
+   + Place: _waiting has Tokens: 1" 
+
+an N26 label: "N26" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N27 label: "N27" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N28 label: "N28" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: waiting has Tokens: 1
+   + Place: _released has Tokens: 1" 
+
+an N29 label: "N29" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: acquired has Tokens: 1
+   + Place: _released has Tokens: 1" 
+
+an N30 label: "N30" ui.name =  "
+   + Place: busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: _released has Tokens: 1" 
+
+an N31 label: "N31" ui.name =  "
+   + Place: busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1" 
+
+an N32 label: "N32" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _released has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N33 label: "N33" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _released has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N34 label: "N34" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N35 label: "N35" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _released has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N36 label: "N36" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N37 label: "N37" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: waiting has Tokens: 1
+   + Place: _released has Tokens: 1" 
+
+an N38 label: "N38" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N39 label: "N39" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _released has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N40 label: "N40" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: acquired has Tokens: 1" 
+
+an N41 label: "N41" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _decide has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N42 label: "N42" ui.name =  "
+   + Place: _busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N43 label: "N43" ui.name =  "
+   + Place: _busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N44 label: "N44" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: waiting has Tokens: 1
+   + Place: _released has Tokens: 1" 
+
+an N45 label: "N45" ui.name =  "
+   + Place: _busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N46 label: "N46" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _acquired has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N47 label: "N47" ui.name =  "
+   + Place: _busy has Tokens: 1
+   + Place: Data has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N48 label: "N48" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: lock has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+an N49 label: "N49" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: decide has Tokens: 1" 
+
+an N50 label: "N50" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _waiting has Tokens: 1
+   + Place: finished has Tokens: 1" 
+
+an N51 label: "N51" ui.name =  "
+   + Place: Data has Tokens: 1
+   + Place: _acquired has Tokens: 1
+   + Place: waiting has Tokens: 1" 
+
+
+
+ae e15 N15 > N9 label: "clo"
+
+
+ae e17 N16 > N4 label: "clo"
+
+
+ae e14 N14 > N15 label: "ReleaseLock"
+ae e16 N14 > N16 label: "return"
+
+
+ae e19 N17 > N3 label: "clo"
+
+
+
+
+
+
+ae e23 N20 > N21 label: "return"
+
+
+ae e26 N23 > N21 label: "clo"
+
+
+ae e25 N22 > N23 label: "repeat"
+
+
+ae e21 N18 > N19 label: "JoinThreads"
+ae e22 N18 > N20 label: "repeat"
+ae e24 N18 > N22 label: "return"
+
+
+ae e28 N24 > N14 label: "clo"
+
+
+ae e13 N13 > N14 label: "computeX"
+ae e18 N13 > N17 label: "return"
+ae e20 N13 > N18 label: "computeZ"
+ae e27 N13 > N24 label: "computeY"
+
+
+ae e30 N25 > N2 label: "clo"
+
+
+ae e12 N12 > N13 label: "read"
+ae e29 N12 > N25 label: "return"
+
+
+ae e32 N26 > N1 label: "clo"
+
+
+ae e11 N11 > N12 label: "waitforLock"
+ae e31 N11 > N26 label: "return"
+
+
+ae e34 N27 > N5 label: "clo"
+
+
+ae e9 N9 > N10 label: "JoinThreads"
+ae e10 N9 > N11 label: "repeat"
+ae e33 N9 > N27 label: "return"
+
+
+ae e39 N31 > N13 label: "clo"
+
+
+ae e42 N33 > N8 label: "clo"
+
+
+ae e44 N34 > N14 label: "clo"
+
+
+ae e41 N32 > N33 label: "ReleaseLock"
+ae e43 N32 > N34 label: "_FetchData"
+
+
+ae e47 N36 > N18 label: "clo"
+
+
+ae e50 N38 > N20 label: "clo"
+
+
+ae e49 N37 > N38 label: "_FetchData"
+
+
+ae e46 N35 > N36 label: "_FetchData"
+ae e48 N35 > N37 label: "repeat"
+
+
+ae e52 N39 > N32 label: "clo"
+
+
+ae e38 N30 > N31 label: "_FetchData"
+ae e40 N30 > N32 label: "computeX"
+ae e45 N30 > N35 label: "computeZ"
+ae e51 N30 > N39 label: "computeY"
+
+
+ae e54 N40 > N12 label: "clo"
+
+
+ae e37 N29 > N30 label: "read"
+ae e53 N29 > N40 label: "_FetchData"
+
+
+ae e56 N41 > N11 label: "clo"
+
+
+ae e36 N28 > N29 label: "waitforLock"
+ae e55 N28 > N41 label: "_FetchData"
+
+
+ae e8 N8 > N9 label: "_FetchData"
+ae e35 N8 > N28 label: "repeat"
+
+
+ae e58 N42 > N7 label: "clo"
+
+
+ae e61 N44 > N28 label: "clo"
+
+
+ae e63 N45 > N43 label: "clo"
+
+
+ae e60 N43 > N44 label: "_ReleaseLock"
+ae e62 N43 > N45 label: "display2User"
+
+
+ae e7 N7 > N8 label: "_ReleaseLock"
+ae e57 N7 > N42 label: "display2User"
+ae e59 N7 > N43 label: "repeat"
+
+
+ae e66 N47 > N43 label: "clo"
+
+
+ae e65 N46 > N47 label: "_write"
+
+
+ae e6 N6 > N7 label: "_write"
+ae e64 N6 > N46 label: "repeat"
+
+
+ae e68 N48 > N1 label: "clo"
+
+
+ae e5 N5 > N6 label: "_waitForLock"
+ae e67 N5 > N48 label: "repeat"
+
+
+ae e4 N4 > N5 label: "ReleaseLock"
+
+
+ae e70 N49 > N22 label: "clo"
+
+
+ae e72 N50 > N4 label: "clo"
+
+
+ae e3 N3 > N4 label: "computeX"
+ae e69 N3 > N49 label: "computeZ"
+ae e71 N3 > N50 label: "computeY"
+
+
+ae e2 N2 > N3 label: "read"
+
+
+ae e74 N51 > N46 label: "clo"
+
+
+ae e1 N1 > N2 label: "waitforLock"
+ae e73 N1 > N51 label: "_waitForLock"
+
+
+ae e0 N0 > N1 label: "spawnThreads"
+
+
