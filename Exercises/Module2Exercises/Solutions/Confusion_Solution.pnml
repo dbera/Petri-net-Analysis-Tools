@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <graphics />
+    <transition id="tr9">
+      <name>
+        <text>initialize</text>
+      </name>
+      <graphics>
+        <position x="260" y="206" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr10">
+      <name>
+        <text>startOps</text>
+      </name>
+      <graphics>
+        <position x="112" y="271" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr11">
+      <name>
+        <text>startOps</text>
+      </name>
+      <graphics>
+        <position x="260" y="501" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr12">
+      <name>
+        <text>terminateAck</text>
+      </name>
+      <graphics>
+        <position x="112" y="726" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr13">
+      <name>
+        <text>finishedAck</text>
+      </name>
+      <graphics>
+        <position x="259" y="673" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr15">
+      <name>
+        <text>initialize</text>
+      </name>
+      <graphics>
+        <position x="841" y="208" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr16">
+      <name>
+        <text>startOps</text>
+      </name>
+      <graphics>
+        <position x="693" y="273" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr17">
+      <name>
+        <text>startOps</text>
+      </name>
+      <graphics>
+        <position x="841" y="503" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr18">
+      <name>
+        <text>terminateAck</text>
+      </name>
+      <graphics>
+        <position x="693" y="728" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr19">
+      <name>
+        <text>finishedAck</text>
+      </name>
+      <graphics>
+        <position x="840" y="675" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr14">
+      <name>
+        <text>ack</text>
+      </name>
+      <graphics>
+        <position x="260" y="371" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr20">
+      <name>
+        <text>ack</text>
+      </name>
+      <graphics>
+        <position x="840" y="372" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl2">
+      <name>
+        <text>On</text>
+      </name>
+      <graphics>
+        <position x="114" y="88" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl3">
+      <name>
+        <text>InitializingModule</text>
+      </name>
+      <graphics>
+        <position x="259" y="311" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl4">
+      <name>
+        <text>BUSY_0</text>
+      </name>
+      <graphics>
+        <position x="111" y="532" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl5">
+      <name>
+        <text>BUSY_1</text>
+      </name>
+      <graphics>
+        <position x="261" y="589" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl1">
+      <name>
+        <text>On</text>
+      </name>
+      <graphics>
+        <position x="770" y="90" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl9">
+      <name>
+        <text>InitializingModule</text>
+      </name>
+      <graphics>
+        <position x="840" y="313" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl10">
+      <name>
+        <text>BUSY_0</text>
+      </name>
+      <graphics>
+        <position x="692" y="534" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl11">
+      <name>
+        <text>BUSY_1</text>
+      </name>
+      <graphics>
+        <position x="842" y="591" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl12">
+      <name>
+        <text>iInit</text>
+      </name>
+      <graphics>
+        <position x="489" y="207" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>iStart</text>
+      </name>
+      <graphics>
+        <position x="489" y="273" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl14">
+      <name>
+        <text>iFinished</text>
+      </name>
+      <graphics>
+        <position x="490" y="674" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>iTerminate</text>
+      </name>
+      <graphics>
+        <position x="493" y="727" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl7">
+      <graphics>
+        <position x="839" y="431" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl8">
+      <graphics>
+        <position x="261" y="431" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl23">
+      <name>
+        <text>iAck</text>
+      </name>
+      <graphics>
+        <position x="494" y="373" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <page id="ip11">
+      <graphics>
+        <position x="494" y="472" />
+        <dimension x="82" y="624" />
+      </graphics>
+      <toolspecific tool="Yasper" version="2.0.5.0">
+        <inline xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx14" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>confusion when generalizing portnets to model event chanels</text>
+        </description>
+        <graphics>
+          <position x="503" y="833" />
+          <dimension x="510" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx9" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>SERVER</text>
+        </description>
+        <graphics>
+          <position x="112" y="19" />
+          <dimension x="88" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx10" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>CLIENT</text>
+        </description>
+        <graphics>
+          <position x="772" y="12" />
+          <dimension x="80" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a5" source="pl2" target="tr9" />
+    <arc id="a15" source="tr9" target="pl3" />
+    <arc id="a16" source="pl2" target="tr10" />
+    <arc id="a17" source="tr10" target="pl4" />
+    <arc id="a18" source="tr11" target="pl5" />
+    <arc id="a19" source="tr12" target="pl2">
+      <graphics>
+        <position x="0" y="687" />
+        <position x="0" y="168" />
+      </graphics>
+    </arc>
+    <arc id="a20" source="pl5" target="tr13" />
+    <arc id="a21" source="tr13" target="pl2">
+      <graphics>
+        <position x="322" y="620" />
+        <position x="323" y="137" />
+      </graphics>
+    </arc>
+    <arc id="a25" source="pl4" target="tr12" />
+    <arc id="a26" source="pl1" target="tr15" />
+    <arc id="a27" source="tr15" target="pl9" />
+    <arc id="a30" source="pl1" target="tr16" />
+    <arc id="a41" source="tr16" target="pl10" />
+    <arc id="a42" source="tr17" target="pl11" />
+    <arc id="a43" source="tr15" target="pl12" />
+    <arc id="a44" source="tr16" target="pl13" />
+    <arc id="a45" source="tr17" target="pl13">
+      <graphics>
+        <position x="557" y="501" />
+      </graphics>
+    </arc>
+    <arc id="a46" source="tr18" target="pl1">
+      <graphics>
+        <position x="975" y="729" />
+        <position x="977" y="156" />
+      </graphics>
+    </arc>
+    <arc id="a47" source="pl11" target="tr19" />
+    <arc id="a48" source="tr19" target="pl1">
+      <graphics>
+        <position x="934" y="619" />
+        <position x="936" y="195" />
+      </graphics>
+    </arc>
+    <arc id="a49" source="pl14" target="tr19" />
+    <arc id="a50" source="pl10" target="tr18" />
+    <arc id="a51" source="pl12" target="tr9" />
+    <arc id="a52" source="pl13" target="tr10" />
+    <arc id="a53" source="pl13" target="tr11">
+      <graphics>
+        <position x="409" y="500" />
+      </graphics>
+    </arc>
+    <arc id="a54" source="tr13" target="pl14" />
+    <arc id="a55" source="tr12" target="pl6" />
+    <arc id="a56" source="pl6" target="tr18" />
+    <arc id="a57" source="pl7" target="tr17" />
+    <arc id="a58" source="pl8" target="tr11" />
+    <arc id="a59" source="pl3" target="tr14" />
+    <arc id="a60" source="tr14" target="pl8" />
+    <arc id="a61" source="pl9" target="tr20" />
+    <arc id="a62" source="tr20" target="pl7" />
+    <arc id="a63" source="tr14" target="pl23" />
+    <arc id="a64" source="pl23" target="tr20" />
+  </net>
+</pnml>

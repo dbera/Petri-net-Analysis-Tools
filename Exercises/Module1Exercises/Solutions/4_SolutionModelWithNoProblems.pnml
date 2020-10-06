@@ -174,7 +174,7 @@
           <text>select_coffee</text>
         </name>
         <graphics>
-          <position x="1034" y="467" />
+          <position x="1034" y="514" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -183,7 +183,7 @@
           <text>status_update</text>
         </name>
         <graphics>
-          <position x="823" y="884" />
+          <position x="823" y="931" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -192,7 +192,7 @@
           <text>Error</text>
         </name>
         <graphics>
-          <position x="1021" y="1020" />
+          <position x="1021" y="1067" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -201,7 +201,7 @@
           <text>Finished</text>
         </name>
         <graphics>
-          <position x="1153" y="960" />
+          <position x="1153" y="1007" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -210,7 +210,7 @@
           <text>init_OK</text>
         </name>
         <graphics>
-          <position x="1033" y="316" />
+          <position x="1033" y="363" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -219,7 +219,7 @@
           <text>TurnOn</text>
         </name>
         <graphics>
-          <position x="1029" y="180" />
+          <position x="1029" y="227" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -228,7 +228,7 @@
           <text>init_NOK</text>
         </name>
         <graphics>
-          <position x="955" y="251" />
+          <position x="955" y="298" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -237,7 +237,7 @@
           <text>InsertCoins</text>
         </name>
         <graphics>
-          <position x="1125" y="648" />
+          <position x="1125" y="695" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -246,7 +246,7 @@
           <text>cost_NOK</text>
         </name>
         <graphics>
-          <position x="961" y="583" />
+          <position x="961" y="630" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -255,7 +255,7 @@
           <text>cost_OK</text>
         </name>
         <graphics>
-          <position x="1100" y="789" />
+          <position x="1100" y="836" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -264,7 +264,7 @@
           <text>turnOff</text>
         </name>
         <graphics>
-          <position x="939" y="1146" />
+          <position x="939" y="1193" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -273,7 +273,7 @@
           <text>send_ack</text>
         </name>
         <graphics>
-          <position x="825" y="704" />
+          <position x="825" y="751" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -282,7 +282,7 @@
           <text>sack</text>
         </name>
         <graphics>
-          <position x="1151" y="1222" />
+          <position x="1151" y="1269" />
           <dimension x="32" y="32" />
         </graphics>
       </transition>
@@ -291,7 +291,7 @@
           <text>ready</text>
         </name>
         <graphics>
-          <position x="1033" y="383" />
+          <position x="1033" y="430" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -303,7 +303,7 @@
           <text>preparin</text>
         </name>
         <graphics>
-          <position x="1102" y="870" />
+          <position x="1102" y="917" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -315,7 +315,7 @@
           <text>idle</text>
         </name>
         <graphics>
-          <position x="1031" y="89" />
+          <position x="1031" y="136" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -327,7 +327,7 @@
           <text>turninOn</text>
         </name>
         <graphics>
-          <position x="1031" y="252" />
+          <position x="1031" y="299" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -339,7 +339,7 @@
           <text>selected</text>
         </name>
         <graphics>
-          <position x="1033" y="552" />
+          <position x="1033" y="599" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -351,7 +351,7 @@
           <text>checking</text>
         </name>
         <graphics>
-          <position x="1033" y="714" />
+          <position x="1033" y="761" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -363,7 +363,7 @@
           <text>Faulty</text>
         </name>
         <graphics>
-          <position x="939" y="1082" />
+          <position x="939" y="1129" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -375,7 +375,7 @@
           <text>recvd</text>
         </name>
         <graphics>
-          <position x="823" y="823" />
+          <position x="823" y="870" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -387,7 +387,7 @@
           <text>recvd</text>
         </name>
         <graphics>
-          <position x="1152" y="1074" />
+          <position x="1152" y="1121" />
           <dimension x="20" y="20" />
         </graphics>
         <initialMarking>
@@ -396,79 +396,79 @@
       </place>
       <referencePlace ref="pl45" id="pn301">
         <graphics>
-          <position x="18" y="467" />
+          <position x="18" y="514" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl1" id="pn304">
         <graphics>
-          <position x="23" y="886" />
+          <position x="23" y="933" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl30" id="pn307">
         <graphics>
-          <position x="20" y="1020" />
+          <position x="20" y="1067" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl51" id="pn310">
         <graphics>
-          <position x="21" y="959" />
+          <position x="21" y="1006" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl44" id="pn313">
         <graphics>
-          <position x="27" y="317" />
+          <position x="27" y="364" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl43" id="pn316">
         <graphics>
-          <position x="23" y="181" />
+          <position x="23" y="228" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl42" id="pn319">
         <graphics>
-          <position x="28" y="251" />
+          <position x="28" y="298" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl46" id="pn322">
         <graphics>
-          <position x="19" y="649" />
+          <position x="19" y="696" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl47" id="pn325">
         <graphics>
-          <position x="20" y="584" />
+          <position x="20" y="631" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl48" id="pn328">
         <graphics>
-          <position x="23" y="790" />
+          <position x="23" y="837" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl50" id="pn331">
         <graphics>
-          <position x="10" y="1144" />
+          <position x="10" y="1191" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl24" id="pn334">
         <graphics>
-          <position x="19" y="703" />
+          <position x="19" y="750" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
       <referencePlace ref="pl222" id="pn337">
         <graphics>
-          <position x="16" y="1222" />
+          <position x="16" y="1269" />
           <dimension x="20" y="20" />
         </graphics>
       </referencePlace>
@@ -479,7 +479,7 @@
 We will learn to resolve them in a structured way in the next module.</text>
           </description>
           <graphics>
-            <position x="642" y="24" />
+            <position x="994" y="24" />
             <dimension x="980" y="48" />
           </graphics>
         </comment>
@@ -487,7 +487,7 @@ We will learn to resolve them in a structured way in the next module.</text>
       <arc id="a1" source="pl227" target="tr249" />
       <arc id="a2" source="pl228" target="tr250">
         <graphics>
-          <position x="999" y="887" />
+          <position x="999" y="934" />
         </graphics>
       </arc>
       <arc id="a3" source="pl228" target="tr251" />
@@ -497,7 +497,7 @@ We will learn to resolve them in a structured way in the next module.</text>
       <arc id="a7" source="pl230" target="tr255" />
       <arc id="a8" source="tr255" target="pl229">
         <graphics>
-          <position x="954" y="132" />
+          <position x="954" y="179" />
         </graphics>
       </arc>
       <arc id="a9" source="pl230" target="tr253" />
@@ -513,8 +513,8 @@ We will learn to resolve them in a structured way in the next module.</text>
       <arc id="a19" source="pl233" target="tr259" />
       <arc id="a20" source="tr259" target="pl229">
         <graphics>
-          <position x="1379" y="1075" />
-          <position x="1380" y="306" />
+          <position x="1379" y="1122" />
+          <position x="1380" y="353" />
         </graphics>
       </arc>
       <arc id="a21" source="tr260" target="pl228" />
@@ -524,8 +524,8 @@ We will learn to resolve them in a structured way in the next module.</text>
       <arc id="a25" source="pl235" target="tr261" />
       <arc id="a26" source="tr261" target="pl229">
         <graphics>
-          <position x="1469" y="1206" />
-          <position x="1466" y="158" />
+          <position x="1469" y="1253" />
+          <position x="1466" y="205" />
         </graphics>
       </arc>
       <arc id="a27" source="tr249" target="pn301" />

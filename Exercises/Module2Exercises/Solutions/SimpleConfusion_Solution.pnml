@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <graphics />
+    <transition id="tr41">
+      <name>
+        <text>initialize</text>
+      </name>
+      <graphics>
+        <position x="136" y="200" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr43">
+      <name>
+        <text>finishedBurstOps</text>
+      </name>
+      <graphics>
+        <position x="136" y="615" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr44">
+      <name>
+        <text>finishedSingleOps</text>
+      </name>
+      <graphics>
+        <position x="282" y="554" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr45">
+      <name>
+        <text>startSingleOps</text>
+      </name>
+      <graphics>
+        <position x="284" y="390" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr46">
+      <name>
+        <text>startBurstOps</text>
+      </name>
+      <graphics>
+        <position x="132" y="466" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr11">
+      <name>
+        <text>initialize</text>
+      </name>
+      <graphics>
+        <position x="833" y="202" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr12">
+      <name>
+        <text>finishedBurstOps</text>
+      </name>
+      <graphics>
+        <position x="834" y="614" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr13">
+      <name>
+        <text>finishedSingleOps</text>
+      </name>
+      <graphics>
+        <position x="980" y="553" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr14">
+      <name>
+        <text>startSingleOps</text>
+      </name>
+      <graphics>
+        <position x="982" y="389" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr15">
+      <name>
+        <text>startBurstOps</text>
+      </name>
+      <graphics>
+        <position x="830" y="465" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl32">
+      <name>
+        <text>On</text>
+      </name>
+      <graphics>
+        <position x="137" y="84" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl33">
+      <name>
+        <text>Initializing_1</text>
+      </name>
+      <graphics>
+        <position x="283" y="311" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl34">
+      <name>
+        <text>Initializing_0</text>
+      </name>
+      <graphics>
+        <position x="134" y="348" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl35">
+      <name>
+        <text>iInit</text>
+      </name>
+      <graphics>
+        <position x="543" y="201" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl36">
+      <graphics>
+        <position x="134" y="531" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl37">
+      <graphics>
+        <position x="283" y="498" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl38">
+      <name>
+        <text>iStartSingle</text>
+      </name>
+      <graphics>
+        <position x="541" y="389" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl39">
+      <name>
+        <text>iStartBurst</text>
+      </name>
+      <graphics>
+        <position x="543" y="466" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl40">
+      <name>
+        <text>iFinished</text>
+      </name>
+      <graphics>
+        <position x="542" y="553" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl1">
+      <name>
+        <text>On</text>
+      </name>
+      <graphics>
+        <position x="835" y="83" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl2">
+      <name>
+        <text>Initializing_1</text>
+      </name>
+      <graphics>
+        <position x="981" y="310" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl3">
+      <name>
+        <text>Initializing_0</text>
+      </name>
+      <graphics>
+        <position x="832" y="347" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl5">
+      <graphics>
+        <position x="832" y="530" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl6">
+      <graphics>
+        <position x="981" y="497" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <page id="ip3">
+      <graphics>
+        <position x="544" y="371" />
+        <dimension x="72" y="442" />
+      </graphics>
+      <toolspecific tool="Yasper" version="2.0.5.0">
+        <inline xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx47" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Simple Confusion</text>
+        </description>
+        <graphics>
+          <position x="536" y="686" />
+          <dimension x="156" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx1" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>SERVER</text>
+        </description>
+        <graphics>
+          <position x="145" y="12" />
+          <dimension x="88" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx2" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>CLIENT</text>
+        </description>
+        <graphics>
+          <position x="835" y="14" />
+          <dimension x="80" y="24" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a1" source="tr41" target="pl33" />
+    <arc id="a2" source="pl35" target="tr41" />
+    <arc id="a3" source="tr43" target="pl32">
+      <graphics>
+        <position x="0" y="557" />
+        <position x="0" y="143" />
+      </graphics>
+    </arc>
+    <arc id="a4" source="tr44" target="pl32">
+      <graphics>
+        <position x="345" y="501" />
+        <position x="346" y="169" />
+      </graphics>
+    </arc>
+    <arc id="a5" source="pl33" target="tr45" />
+    <arc id="a6" source="pl34" target="tr46" />
+    <arc id="a7" source="tr46" target="pl36" />
+    <arc id="a8" source="pl36" target="tr43" />
+    <arc id="a9" source="tr45" target="pl37" />
+    <arc id="a10" source="pl37" target="tr44" />
+    <arc id="a11" source="pl38" target="tr45" />
+    <arc id="a12" source="pl39" target="tr46" />
+    <arc id="a13" source="tr44" target="pl40" />
+    <arc id="a14" source="tr43" target="pl40">
+      <graphics>
+        <position x="429" y="613" />
+      </graphics>
+    </arc>
+    <arc id="a15" source="tr11" target="pl3" />
+    <arc id="a16" source="tr12" target="pl1">
+      <graphics>
+        <position x="698" y="556" />
+        <position x="698" y="142" />
+      </graphics>
+    </arc>
+    <arc id="a17" source="tr13" target="pl1">
+      <graphics>
+        <position x="1043" y="500" />
+        <position x="1044" y="168" />
+      </graphics>
+    </arc>
+    <arc id="a18" source="pl2" target="tr14" />
+    <arc id="a19" source="pl3" target="tr15" />
+    <arc id="a21" source="tr15" target="pl5" />
+    <arc id="a22" source="pl5" target="tr12" />
+    <arc id="a26" source="tr14" target="pl6" />
+    <arc id="a37" source="pl6" target="tr13" />
+    <arc id="a38" source="tr14" target="pl38" />
+    <arc id="a39" source="tr15" target="pl39" />
+    <arc id="a49" source="pl40" target="tr13" />
+    <arc id="a50" source="pl40" target="tr12">
+      <graphics>
+        <position x="667" y="616" />
+      </graphics>
+    </arc>
+    <arc id="a55" source="tr41" target="pl34" />
+    <arc id="a56" source="pl32" target="tr41" />
+    <arc id="a57" source="tr11" target="pl2" />
+    <arc id="a58" source="tr11" target="pl35" />
+    <arc id="a59" source="pl1" target="tr11" />
+  </net>
+</pnml>

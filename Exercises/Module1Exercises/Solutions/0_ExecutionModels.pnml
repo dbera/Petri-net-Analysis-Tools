@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnml>
+  <net type="http://www.yasper.org/specs/epnml-1.1" id="dc1">
+    <graphics />
+    <transition id="tr26">
+      <name>
+        <text>doA</text>
+      </name>
+      <graphics>
+        <position x="76" y="104" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr27">
+      <name>
+        <text>doB</text>
+      </name>
+      <graphics>
+        <position x="208" y="104" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr28">
+      <name>
+        <text>doA</text>
+      </name>
+      <graphics>
+        <position x="142" y="434" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr29">
+      <name>
+        <text>doB</text>
+      </name>
+      <graphics>
+        <position x="76" y="566" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr30">
+      <name>
+        <text>doC</text>
+      </name>
+      <graphics>
+        <position x="208" y="566" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr31">
+      <name>
+        <text>doC</text>
+      </name>
+      <graphics>
+        <position x="505" y="170" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr32">
+      <name>
+        <text>doA</text>
+      </name>
+      <graphics>
+        <position x="472" y="632" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr33">
+      <name>
+        <text>doB</text>
+      </name>
+      <graphics>
+        <position x="604" y="632" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr34">
+      <name>
+        <text>repeat</text>
+      </name>
+      <graphics>
+        <position x="472" y="566" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr35">
+      <name>
+        <text>doA</text>
+      </name>
+      <graphics>
+        <position x="835" y="566" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr36">
+      <name>
+        <text>doB</text>
+      </name>
+      <graphics>
+        <position x="967" y="566" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr37">
+      <graphics>
+        <position x="802" y="104" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr38">
+      <graphics>
+        <position x="934" y="104" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr39">
+      <graphics>
+        <position x="802" y="236" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <transition id="tr40">
+      <graphics>
+        <position x="934" y="236" />
+        <dimension x="32" y="32" />
+      </graphics>
+    </transition>
+    <place id="pl2">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="10" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl3">
+      <name>
+        <text>busy</text>
+      </name>
+      <graphics>
+        <position x="142" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl4">
+      <name>
+        <text>finished</text>
+      </name>
+      <graphics>
+        <position x="274" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl5">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="142" y="368" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>startingB</text>
+      </name>
+      <graphics>
+        <position x="76" y="500" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl7">
+      <name>
+        <text>startingC</text>
+      </name>
+      <graphics>
+        <position x="208" y="500" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl8">
+      <name>
+        <text>doneB</text>
+      </name>
+      <graphics>
+        <position x="76" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl9">
+      <name>
+        <text>doneC</text>
+      </name>
+      <graphics>
+        <position x="208" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl10">
+      <name>
+        <text>finishedA</text>
+      </name>
+      <graphics>
+        <position x="439" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl11">
+      <name>
+        <text>finishedB</text>
+      </name>
+      <graphics>
+        <position x="571" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl12">
+      <name>
+        <text>busy</text>
+      </name>
+      <graphics>
+        <position x="505" y="236" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="406" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl14">
+      <name>
+        <text>busy</text>
+      </name>
+      <graphics>
+        <position x="538" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>finished</text>
+      </name>
+      <graphics>
+        <position x="670" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl16">
+      <name>
+        <text>doneA</text>
+      </name>
+      <graphics>
+        <position x="835" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl17">
+      <name>
+        <text>doneB</text>
+      </name>
+      <graphics>
+        <position x="967" y="632" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl18">
+      <name>
+        <text>Load</text>
+      </name>
+      <graphics>
+        <position x="736" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl19">
+      <name>
+        <text>Check</text>
+      </name>
+      <graphics>
+        <position x="868" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl20">
+      <name>
+        <text>Unload</text>
+      </name>
+      <graphics>
+        <position x="1000" y="104" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl21">
+      <name>
+        <text>Load</text>
+      </name>
+      <graphics>
+        <position x="736" y="236" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl22">
+      <name>
+        <text>Check</text>
+      </name>
+      <graphics>
+        <position x="868" y="236" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl23">
+      <name>
+        <text>Unload</text>
+      </name>
+      <graphics>
+        <position x="1000" y="236" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>0</text>
+      </initialMarking>
+    </place>
+    <place id="pl24">
+      <name>
+        <text>Worker</text>
+      </name>
+      <graphics>
+        <position x="868" y="170" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl25">
+      <name>
+        <text>idle</text>
+      </name>
+      <graphics>
+        <position x="901" y="500" />
+        <dimension x="20" y="20" />
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx77" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Sequential
+</text>
+        </description>
+        <graphics>
+          <position x="126" y="32" />
+          <dimension x="98" y="46" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx78" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Synchronization
+</text>
+        </description>
+        <graphics>
+          <position x="504" y="23" />
+          <dimension x="138" y="46" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx79" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Mutual Exclusion
+</text>
+        </description>
+        <graphics>
+          <position x="864" y="27" />
+          <dimension x="146" y="46" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx80" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Choice / Non-determinism
+</text>
+        </description>
+        <graphics>
+          <position x="899" y="422" />
+          <dimension x="214" y="46" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx81" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Loop
+</text>
+        </description>
+        <graphics>
+          <position x="474" y="468" />
+          <dimension x="56" y="46" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <toolspecific tool="Yasper" version="2.0.5.0">
+      <comment id="tx82" xmlns="http://www.yasper.org/specs/epnml-1.1/toolspec">
+        <description>
+          <text>Concurrency
+</text>
+        </description>
+        <graphics>
+          <position x="143" y="292" />
+          <dimension x="114" y="46" />
+        </graphics>
+      </comment>
+    </toolspecific>
+    <arc id="a37" source="pl2" target="tr26" />
+    <arc id="a38" source="tr26" target="pl3" />
+    <arc id="a39" source="pl3" target="tr27" />
+    <arc id="a40" source="tr27" target="pl4" />
+    <arc id="a41" source="pl5" target="tr28" />
+    <arc id="a42" source="tr28" target="pl6" />
+    <arc id="a43" source="tr28" target="pl7" />
+    <arc id="a44" source="pl6" target="tr29" />
+    <arc id="a45" source="tr29" target="pl8" />
+    <arc id="a46" source="pl7" target="tr30" />
+    <arc id="a47" source="tr30" target="pl9" />
+    <arc id="a48" source="pl10" target="tr31" />
+    <arc id="a49" source="pl11" target="tr31" />
+    <arc id="a50" source="tr31" target="pl12" />
+    <arc id="a51" source="pl13" target="tr32" />
+    <arc id="a52" source="tr32" target="pl14" />
+    <arc id="a53" source="pl14" target="tr33" />
+    <arc id="a54" source="tr33" target="pl15" />
+    <arc id="a55" source="pl14" target="tr34" />
+    <arc id="a56" source="tr34" target="pl13" />
+    <arc id="a57" source="tr35" target="pl16" />
+    <arc id="a58" source="tr36" target="pl17" />
+    <arc id="a59" source="pl18" target="tr37" />
+    <arc id="a60" source="tr37" target="pl19" />
+    <arc id="a61" source="pl19" target="tr38" />
+    <arc id="a62" source="tr38" target="pl20" />
+    <arc id="a63" source="pl21" target="tr39" />
+    <arc id="a64" source="tr39" target="pl22" />
+    <arc id="a65" source="pl22" target="tr40" />
+    <arc id="a66" source="tr40" target="pl23" />
+    <arc id="a67" source="pl24" target="tr37" />
+    <arc id="a68" source="tr38" target="pl24" />
+    <arc id="a69" source="pl24" target="tr39" />
+    <arc id="a70" source="tr40" target="pl24" />
+    <arc id="a71" source="pl25" target="tr35" />
+    <arc id="a72" source="pl25" target="tr36" />
+  </net>
+</pnml>
